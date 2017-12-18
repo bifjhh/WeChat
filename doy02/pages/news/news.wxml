@@ -38,6 +38,7 @@ element，element 分组选择器
 </view>
 
 <!-- 冒泡事件
+绑定事件 bind || catch
 bind    事件绑定不会阻止事件向上冒泡
 catch   事件绑定可以阻止冒泡事件向上冒泡
 
