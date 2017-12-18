@@ -64,3 +64,8 @@
   },
 ```
 [点击查看官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html)
+
+## itday01
+- 使用wx:for循环数组数据
+- 设置wx:key
+- 修改默认的wx:for-item="v"
