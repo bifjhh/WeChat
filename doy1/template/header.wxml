@@ -1,0 +1,7 @@
+<template name="header">
+公共头部
+  <view>{{item.title}}</view>
+  <view>{{item.name}}</view>
+
+</template>
+<view>这是template外面的公共头部</view>

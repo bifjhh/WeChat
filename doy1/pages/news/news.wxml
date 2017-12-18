@@ -1,7 +1,55 @@
-<!-- 新闻页面 -->
-<view>
-姓名：{{name}}
+<!--定义模板  name模板名称
+<template name="header">
+  <view>
+    这是头部
+  </view>
+</template>
 
-年龄：{{age}}
-{{array[0].msg}}
-</view>
+使用模板 is="模板的名称" 
+<template is="header">
+</template>
+ -->
+
+<!-- <view>
+ --------
+ </view> -->
+
+<!-- <template name="header">
+  <view>{{title}}</view>
+
+  <view>{{name}}</view> 
+  
+</template> -->
+<!--使用模板 is=模板名称  data传值  -->
+<!-- <template is="header" data="{{title}}">
+</template> -->
+
+<!-- <template is="header" data="{{title,name}}">
+</template> -->
+
+
+<!--使用模板 is=模板名称  data传值  -->
+
+<!-- <template name="header">
+  <view>{{item.title}}</view>
+
+  <view>{{item.name}}</view>
+
+</template>
+
+<template is="header" data="{{item}}">
+</template> -->
+
+<!--import  引入外部的模板-->
+<!-- <import src="../../template/header.wxml"/>
+<template is="header" data="{{item}}">
+</template>  -->
+
+<!--include  引入外部的模板-->
+<include src="../../template/header.wxml"/>
+<template is="header" data="{{item}}">
+</template> 
+
+<!-- include引入外部的模板的时候  忽略了template定义的模板 直接引入相当于吧模板里面的内容复制到我们的页面
+
+import 引入 只会引入目标文件中定义的 template 要通过template is="header" 这样的方式使用模板，该外部模板传入数据的时候，需要绑定到data="{{item}}" -->

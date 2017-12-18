@@ -1,0 +1,12 @@
+.list_t{
+  padding: 10px;
+}
+view{
+  margin: 10px 0;
+}
+.cate{
+  background: #eee;
+}
+.list_t{
+  text-indent: 30px;
+}

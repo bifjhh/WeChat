@@ -1,0 +1,6 @@
+<template name="footer">
+公共底部
+  <view>{{item.title}}</view>
+  <view>{{item.name}}</view>
+
+</template>
