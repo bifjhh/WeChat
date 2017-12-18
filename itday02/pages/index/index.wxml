@@ -1,1 +1,3 @@
-<button bindtap="tapHandle">click me</button>
+<view bindtap="viewTapHandle">
+    <button bindtap="tapHandle">click me</button>
+</view>
