@@ -1,0 +1,15 @@
+.header{
+  background-color: #0ff;
+}
+p{
+  color: #f0f;
+}
+#banner{
+  background-color: #ccc;
+  height: 100rpx;
+  
+}
+.touch{
+  height: 200rpx;
+  background-color: rgba(100, 100, 100, .3)
+}

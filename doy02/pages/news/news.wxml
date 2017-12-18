@@ -1,0 +1,39 @@
+<div class="header">
+这是一个头部
+</div>
+
+<p>这是一个头部标签</p>
+
+<!--
+
+1.使用以前的HTML标签的话，需要把这些标签转换成块元素，但是官方不建议使用--》推荐使用view
+2.使用以前的HTML标签的话，无法使用 id 选择器
+——————还是使用官方提供的 标签 比较好
+view 相当于我们以前的div 块级元素
+text文本标签 内联元素 除了文本节点意外的其他节点都无法长按选中
+
+使用view 标签进行布局
+
+.class
+#id id选择器
+element
+element，element 分组选择器
+::before
+::after
+
+-->
+
+<view id='banner'>
+这是一个banner
+</view>
+
+<view class='banner_rpx'>
+这是一个rpx 定义的banner
+</view>
+<view class='touch' bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+bindtap         用于绑定点击事件
+bindlongtap     用于绑定长按事件
+<button bindtap='run' data-id='121'>点击触发事件
+<!--data- 用于自定义属性  -->
+</button>
+</view>
