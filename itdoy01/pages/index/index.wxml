@@ -1,0 +1,4 @@
+<view>
+{{msg}} 
+</view>
+<button bindtap="defaultTap">Button</button>

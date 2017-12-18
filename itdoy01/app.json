@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/each/each",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {}
+}
