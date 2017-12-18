@@ -13,6 +13,10 @@
         "enablePullDownRefresh": false
     },
     "tabBar": {
+        "color": "#999",
+        "selectedColor": "#444",
+        "backgroundColor": "#fff",
+        "borderStyle": "black",
         "list": [
             {
                 "pagePath": "pages/index/index",
