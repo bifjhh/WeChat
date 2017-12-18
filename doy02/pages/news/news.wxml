@@ -1,5 +1,5 @@
 <div class="header">
-这是一个头部
+  这是一个头部
 </div>
 
 <p>这是一个头部标签</p>
@@ -24,16 +24,38 @@ element，element 分组选择器
 -->
 
 <view id='banner'>
-这是一个banner
+  这是一个banner
 </view>
 
 <view class='banner_rpx'>
-这是一个rpx 定义的banner
+  这是一个rpx 定义的banner
 </view>
 <view class='touch' bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
-bindtap         用于绑定点击事件
-bindlongtap     用于绑定长按事件
-<button bindtap='run' data-id='121'>点击触发事件
-<!--data- 用于自定义属性  -->
-</button>
+  bindtap 用于绑定点击事件 bindlongtap 用于绑定长按事件
+  <button bindtap='run' data-id='121'>点击触发事件
+    <!--data- 用于自定义属性  -->
+  </button>
+</view>
+
+<!-- 冒泡事件
+bind    事件绑定不会阻止事件向上冒泡
+catch   事件绑定可以阻止冒泡事件向上冒泡
+
+ -->
+<!-- <view id='outter' bindtap='handleTap1'>
+  outer view1
+  <view id='middle' bindtap='handleTap2'>
+    middle view 2
+    <view id='inner' bindtap='handleTap3'>inner view 3</view>
+
+  </view>
+</view> -->
+
+<view id='outter' catchtap='handleTap1'>
+  outer view1
+  <view id='middle' catchtap='handleTap2'>
+    middle view 2
+    <view id='inner' catchtap='handleTap3'>inner view 3</view>
+
+  </view>
 </view>

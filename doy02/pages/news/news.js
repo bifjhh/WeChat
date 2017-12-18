@@ -48,6 +48,15 @@ Page({
   touchend() {/* 手势滑动完成 */
     console.log("touchend");
   },
+  handleTap1() {
+    console.log("handleTap1");
+  },
+  handleTap2() {
+    console.log("handleTap2");
+  },
+  handleTap3() {
+    console.log("handleTap3");
+  },
 
 
 })
