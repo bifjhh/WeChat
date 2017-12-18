@@ -1,0 +1,2 @@
+    <text>我是设置页面{{test}}</text>
+    <view class="abc" bindtap="tapName"> view文字 </view>   
