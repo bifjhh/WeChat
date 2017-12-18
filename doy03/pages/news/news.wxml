@@ -1,0 +1,12 @@
+<view>
+{{name}}
+</view>
+
+
+
+
+
+<!--循环的时候要注意绑定数据-->
+<view wx:for="{{list}}" wx:key="{{index}}">  
+    <text>{{item.catname}}</text>
+</view>
