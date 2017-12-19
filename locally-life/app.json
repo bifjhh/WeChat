@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/messages/messages",
-        "pages/profile/profile"
+        "pages/profile/profile",
+        "pages/list/list"
     ],
     "windew": {
         "navigationBarBackgroundColor": "#3a4861",
