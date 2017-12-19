@@ -12,7 +12,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+  wx.request({
+      url:'https://api.douban.com/v2/movie/coming_soon',
+      header:{
+        'Content-Type':'json'
+      },
+      success: function(res) {
+        console.log(res)
+      }
+      // 发送异步请求不再是WEB那套AJAX
+      // 客户端开发  是没有跨域的
+      // 请求的地址必须在管理后台添加白名单
+      // 请求的域名必须备案，服务端必须采用HTTPS
+
+  })
   },
 
   /**
