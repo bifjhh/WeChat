@@ -1,19 +1,19 @@
-const app = getApp()
+/**
+ * 导出一个封装的promise方法请求数据
+ * @param {域名后缀} url ;
+ * @param {传入参数} data ;
+ */
 
-module.exports = (url, data, method = 'GET', header = {}) => {
-    wx.showLoading({
-        title: 'Loading...'
-    })
-    return new Promise((resolve, reject) => {
+module.exports = (url,data)=>{
+    return new Promise((resolve,reject)=>{
         wx.request({
-            url: app.config.apiBase + url,
-            data,
-            header,
-            method,
-            dataType: 'json',
+            url: 'https://locally.uieee.com/'+url,
+            data:data,
             success: resolve,
-            fail: reject,
-            complete: wx.hideLoading
+            fail: reject
         })
     })
 }
+
+
+

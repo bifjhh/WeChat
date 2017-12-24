@@ -1,2 +1,34 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+</view>
+<view class="content">
+    <view>
+        <navigator url="#">
+            <text>我的名片</text>
+        </navigator>
+    </view>
+   <view>
+        <navigator url="#">
+            <text>收到的名片</text>
+        </navigator>
+    </view>
+   <view>
+        <navigator url="#">
+            <text>名片动态</text>
+        </navigator>
+    </view>
+   <view>
+        <navigator url="#">
+            <text>我的红包</text>
+        </navigator>
+    </view>
+  
+
+</view>

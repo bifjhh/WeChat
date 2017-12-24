@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-avatar{
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 160rpx;
+}
+.user-name{
+    font-size: 32rpx;
+    font-family: "MicroSoft Yahei";
+}

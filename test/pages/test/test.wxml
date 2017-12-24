@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<button bindtap='scan'>111</button>
+<button bindtap='post'>333</button>

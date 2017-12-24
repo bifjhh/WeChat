@@ -1,6 +1,7 @@
 .slides{
     height: 380rpx;
 }
+.slides navigator,
 .slides image{
     width: 100%;
     height: 100%;
@@ -34,4 +35,8 @@
     margin-top: 20rpx;
     color: #888;
     font-size: 28rpx;
+}
+.banner image{
+    width: 100%;
+    height: 200rpx;
 }

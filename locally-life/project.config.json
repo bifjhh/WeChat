@@ -21,8 +21,21 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "列表",
+					"pathName": "pages/list/list",
+					"query": "cat=1"
+				},
+				{
+					"id": -1,
+					"name": "个人信息",
+					"pathName": "pages/profile/profile",
+					"query": ""
+				}
+			]
 		}
 	}
 }

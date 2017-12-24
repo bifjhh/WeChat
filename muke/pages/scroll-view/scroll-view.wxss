@@ -1,0 +1,13 @@
+
+scroll-view{
+  height: 500px
+}
+scroll-view view{
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.section{
+  height: 100%
+}

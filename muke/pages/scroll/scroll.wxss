@@ -1,0 +1,37 @@
+/* pages/scroll/scroll.wxss */
+page{
+  height: 100%;
+}
+view{
+  width: 500rpx;
+  height: 300rpx;
+  background-color: #00f0f0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease-in;
+  box-shadow: 5px 5px 2px 3px rgba(204, 204, 204, 0.274);
+  border-radius: 5rpx;
+  
+}
+.box1{
+  background-color: #ccc;
+  /* z-index: 9; */
+  /* top: 517rpx; */
+  /* opacity: .89; */
+  
+}
+.box2{
+  background-color: #00f0f0;
+  /* z-index: 8; */
+  /* top: 367rpx; */
+  /* opacity: .5; */
+}
+.box3{
+  background-color: #fcf;
+  /* z-index: 7; */
+  /* top: 667rpx; */
+  /* opacity: .5; */
+}

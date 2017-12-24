@@ -1,3 +1,6 @@
+// 导入请求工具
+const fetch = require('../../utils/fetch.js');
+
 // pages/index/index.js
 Page({
 
@@ -13,15 +16,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var _this=this;
-    wx.request({
-      url: 'https://locally.uieee.com/slides',
-      success:(res)=>{
-        let data = res.data;
-        this.setData({slides:data});
-        console.log(data);
-      }
+    // 请求轮播图数据
+      fetch('slides').then((res)=>{
+        this.setData({ slides: res.data});
+      })
+
+    // 请求分类功能列表数据
+    fetch('categories').then((res) => {
+      this.setData({ categories: res.data });
     })
+
     // wx.request({
     //     url:'https://api.douban.com/v2/movie/coming_soon',
     //     header:{

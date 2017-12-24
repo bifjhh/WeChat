@@ -1,1 +1,26 @@
-/* pages/profile/profile.wxss */
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+.content{
+    margin-top: 150rpx;
+}
+.content view{
+    line-height: 40rpx;
+    background-color: rgba(250, 250, 250, 0.856);
+    margin-top: 20rpx;
+    padding: 20rpx 10rpx;
+}

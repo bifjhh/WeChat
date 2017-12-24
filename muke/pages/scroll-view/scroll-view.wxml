@@ -1,0 +1,8 @@
+<view class="section">
+  <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green" wx:for="{{list}}" style='background:{{item}}'></view>
+   
+  </scroll-view>
+
+  
+</view>

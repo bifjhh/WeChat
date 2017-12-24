@@ -1,0 +1,13 @@
+
+
+<view class='box1' style="top:{{tops[0]}}rpx;z-index:{{zindex[0]}};opacity:.{{zindex[0]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+我是一号
+</view>
+
+<view class='box2' style="top:{{tops[1]}}rpx;z-index:{{zindex[1]}};opacity:.{{zindex[0]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+我是二号
+</view>
+
+<view class='box3' style="top:{{tops[2]}}rpx;z-index:{{zindex[2]}};opacity:.{{zindex[0]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+我是三号
+</view>
