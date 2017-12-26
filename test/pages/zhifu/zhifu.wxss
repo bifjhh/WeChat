@@ -1,0 +1,6 @@
+/* pages/zhifu/zhifu.wxss */
+.iphone{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #ccc;
+}

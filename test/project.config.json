@@ -21,12 +21,42 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "翻页",
+					"pathName": "pages/fanye/fanye",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "请求",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "滑动",
+					"pathName": "pages/touch/touch",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shuai",
+					"pathName": "pages/vibreat/vibreat",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "支付",
+					"pathName": "pages/zhifu/zhifu",
 					"query": ""
 				}
 			]

@@ -1,7 +1,13 @@
 {
   "pages":[
-    "pages/test/test",
     "pages/index/index",
+    "pages/test/test",
+    "pages/ocr/ocr",
+    "pages/fanye/fanye",
+    "pages/zd/zd",
+    "pages/touch/touch",
+    "pages/vibreat/vibreat",
+    "pages/zhifu/zhifu",
     "pages/logs/logs"
   ],
   "window":{

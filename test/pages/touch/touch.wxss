@@ -1,0 +1,17 @@
+/* pages/touch/touch.wxss */
+page{
+   overflow:hidden; 
+}
+.body{
+    height: 100%;
+    overflow:hidden; 
+    
+}
+.body view{
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #000;
+    margin-top: 20rpx;
+    text-align: center;
+    background-color: antiquewhite;
+}

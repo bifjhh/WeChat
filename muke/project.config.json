@@ -21,12 +21,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "图像",
-					"pathName": "pages/scroll/scroll"
+					"pathName": "pages/scroll/scroll",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "222",
+					"pathName": "pages/scroll-view/scroll-view"
 				}
 			]
 		}

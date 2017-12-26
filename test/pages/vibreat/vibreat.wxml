@@ -1,0 +1,36 @@
+<view  bindtouchmove="move" class='box'>
+<view class="myview aa"  bindtouchmove="move_drag" style='top:{{balltop}}px'>aaa</view>
+<view class="myview"  bindtouchmove="move_drag">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+<view class="myview">aaa</view>
+</view>
+<button bindtap='res'>请求后台</button>
+<button bindtap='res1'>发送数据</button>
+<button bindtap='login'>登录</button>
+<button bindtap='upload'>上传图片</button>
+<button bindtap='ocr'>图片识别</button>
+<view>
+{{list[0].dname}}
+<image src='http://192.168.1.5:8080/Maven_Proje/{{list[0].deptpic}}'></image>
+</view>

@@ -1,5 +1,14 @@
 {
   "pages": [
+    "pages/posts/posts",
     "pages/welcome/welcome"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小刘",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  }
 } 

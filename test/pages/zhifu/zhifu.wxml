@@ -1,0 +1,4 @@
+<!--pages/zhifu/zhifu.wxml-->
+<text>pages/zhifu/zhifu.wxml</text>
+<button type="default" bindtap="zhifu">Button</button>
+<view class='iphone'></view>

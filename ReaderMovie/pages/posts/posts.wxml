@@ -1,0 +1,9 @@
+<view>
+    <swiper>
+        <block wx:for="">
+            <swiper-item>
+                <image src="" class="" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
