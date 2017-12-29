@@ -1,9 +1,58 @@
 <view>
-    <swiper>
-        <block wx:for="">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" autoplay="5000">
             <swiper-item>
-                <image src="" class="" />
+                <image src="/images/iqiyi.png" class="" />
             </swiper-item>
-        </block>
+             <swiper-item>
+                <image src="/images/vr.png" class="" />
+            </swiper-item>
+             <swiper-item>
+                <image src="/images/wx.png" class="" />
+            </swiper-item>
     </swiper>
+    <view class="post-container">
+        <view class="post-author-date">
+           <image class="post-author" src="/images/avatar/1.png"/> 
+           <text class="post-date">Nov 25 2017</text>
+        </view>
+        <text class="post-title">正事虾肥蟹壮时</text>
+        <image class="post-image" src="/images/post/crab.png" />
+        <text class="post-content">本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。</text>
+        <view class="post-like">
+            <image class="post-like-image" src="/images/icon/chat.png" />
+            <text class="post-like-font">92</text>
+            <image class="post-like-image" src="/images/icon/view.png" />
+            <text class="post-like-font">65</text>
+        </view>
+    </view>
+    <view class="post-container">
+        <view class="post-author-date">
+           <image class="post-author" src="/images/avatar/1.png"/> 
+           <text class="post-date">Nov 25 2017</text>
+        </view>
+        <text class="post-title">正事虾肥蟹壮时</text>
+        <image class="post-image" src="/images/post/crab.png" />
+        <text class="post-content">本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。</text>
+        <view class="post-like">
+            <image class="post-like-image" src="/images/icon/chat.png" />
+            <text class="post-like-font">92</text>
+            <image class="post-like-image" src="/images/icon/view.png" />
+            <text class="post-like-font">65</text>
+        </view>
+    </view>
+    <view class="post-container">
+        <view class="post-author-date">
+           <image class="post-author" src="/images/avatar/1.png"/> 
+           <text class="post-date">Nov 25 2017</text>
+        </view>
+        <text class="post-title">正事虾肥蟹壮时</text>
+        <image class="post-image" src="/images/post/crab.png" />
+        <text class="post-content">本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。</text>
+        <view class="post-like">
+            <image class="post-like-image" src="/images/icon/chat.png" />
+            <text class="post-like-font">92</text>
+            <image class="post-like-image" src="/images/icon/view.png" />
+            <text class="post-like-font">65</text>
+        </view>
+    </view>
 </view>

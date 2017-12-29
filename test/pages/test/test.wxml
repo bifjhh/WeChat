@@ -1,5 +1,14 @@
 <!--pages/test/test.wxml-->
-<text>pages/test/test.wxml</text>
-<button bindtap='scan'>111</button>
-<button bindtap='post'>333</button>
+<button bindtap='scan'>登录测试</button>
+<button bindtap='post'>post测试</button>
 <button bindtap='ocr'>ocr</button>
+<button bindtap='zhifu'>测试支付</button>
+<button bindtap='pc'>获取设备信息</button>
+<button bindtap='test'>测试</button>
+<button bindtap='record'>开始录音</button>
+<button bindtap='stopRecord'>停止录音</button>
+<block>
+    <view>
+        
+    </view>
+</block>

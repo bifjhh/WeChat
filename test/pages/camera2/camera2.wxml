@@ -1,0 +1,14 @@
+<!--index.wxml-->  
+<view class='body'>
+<camera id="myCamera" class="camera" device-position="back" flash="auto">  
+<cover-view class="container">  
+  <cover-view class="pause" bindtap="pause">  
+    <cover-image class="img" src="http://img1.imgtn.bdimg.com/it/u=4225722360,1367332860&fm=214&gp=0.jpg">  
+  </cover-image></cover-view>  
+</cover-view>  
+</camera>
+
+</view>
+<button  type="primary" bindtap="takePhoto">拍照</button>
+<view>预览</view>
+<image mode="widthFix" src="{{src}}"></image>

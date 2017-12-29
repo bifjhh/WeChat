@@ -20,6 +20,10 @@
 			"current": -1,
 			"list": []
 		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 2,
 			"list": [
@@ -57,6 +61,18 @@
 					"id": 5,
 					"name": "支付",
 					"pathName": "pages/zhifu/zhifu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "相机",
+					"pathName": "pages/camera/camera",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "相机2",
+					"pathName": "pages/camera2/camera2",
 					"query": ""
 				}
 			]

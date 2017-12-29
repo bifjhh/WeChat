@@ -26,22 +26,24 @@ Page({
     })
   }, */
   zhifu(){
-    var that = this;
-    wx.request({
-      url: service_url + 'wxPay',
-      data: {
-       /*  
-       
-        String openid, 
-        String 'wx942a74c19e682464',
-        String mch_id,  
-        
-        */
-      },
-      method: 'GET',
+    wx.login({
       success: function (res) {
-        console.log(res);
-        that.doWxPay(res.data);
+        console.log(res)
+        if (res.code) {
+          wx.request({
+            url: 'http://172.20.10.14:8080/bantu/wxuser/login',
+            data: {
+              appid: 'wx942a74c19e682464',
+              code: res.code,
+              secret: '5dc91c6b4c234e6c90436f5f5d0043e5'
+            },
+            success: function (res) {
+              console.log(res.data)
+            }
+          }) 
+        } else {
+          console.log('获取用户登录态失败！' + res.errMsg)
+        }
       }
     });
 

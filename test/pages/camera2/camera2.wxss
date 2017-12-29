@@ -1,0 +1,43 @@
+.body{
+  width: 100%;
+  background-color: #ededed;
+  height: 600rpx;
+  display: flex;
+  justify-content:center;
+}
+
+.container {  
+ position: relative;  
+  top: 50%;  
+  height: 50px;  
+  margin-top: -25px;  
+  display: flex;  
+   
+}  
+.camera{  
+  
+  height:500rpx;  
+  width:  400rpx;  
+}  
+  
+.pause,.time {  
+  flex: 1;  
+  height: 100%;  
+}  
+.time {  
+  text-align: center;  
+  background-color: rgba(0, 0, 0, .5);  
+  color: white;  
+  line-height: 50px;  
+}  
+.img {  
+  width: 40px;  
+  height: 40px;  
+  margin: 5px auto;  
+} 
+button{
+  width: 100rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  font-size: 20rpx;
+}

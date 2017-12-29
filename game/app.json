@@ -1,15 +1,6 @@
 {
   "pages":[
-    "pages/test/test",
     "pages/index/index",
-    "pages/ocr/ocr",
-    "pages/fanye/fanye",
-    "pages/zd/zd",
-    "pages/touch/touch",
-    "pages/vibreat/vibreat",
-    "pages/zhifu/zhifu",
-    "pages/camera/camera",
-    "pages/camera2/camera2",
     "pages/logs/logs"
   ],
   "window":{
