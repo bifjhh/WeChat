@@ -1,3 +1,27 @@
+# 目录
+- doy1
+  + 练习
+- doy02
+  + 练习
+- doy03
+  + 练习
+- itday01
+  + 练习
+- itday02
+  + 练习
+- locally-life
+  + 练习
+- muke
+  + 练习
+- weapp-locally-master
+  + 练习
+- wechat
+  + 练习
+- test
+  + 各种API接口测试  
+- ReaderMovie
+  + 小程序项目实战
+
 # 小程序的定义
 - 不需要下载安装，可以立即使用
   + 因为体积比较小，在加载的时候用户基本赶紧不到下载的过程
