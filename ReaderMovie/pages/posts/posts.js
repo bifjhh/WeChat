@@ -12,38 +12,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var posts_content = [
-      {
-        date:"Sep 18 2016",
-        title:"正式虾肥蟹壮时",
-        post_img:"/images/avatar/1.png",
-        author_img:"/images/post/crab.png",
-        content: "本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码",
-        view_num:"112",
-        collect:"96"
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5a1b963ffc9bad5c3ee5308b/example/',//自己虚拟接口完成新闻列表渲染
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: res=>{
+        // success
+        console.log(res.data.data)
+        this.setData({
+          posts_content: res.data.data
+        });
+        
       },
-      {
-        date:"Sep 18 2017",
-        title:"正式虾肥蟹壮时",
-        post_img:"/images/avatar/1.png",
-        author_img:"/images/post/crab.png",
-        content: "本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码",
-        view_num:"112",
-        collect:"96"
+      fail: function() {
+        // fail
       },
-      {
-        date:"Sep 18 20186",
-        title:"正式虾肥蟹壮时",
-        post_img:"/images/avatar/1.png",
-        author_img:"/images/post/crab.png",
-        content: "本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码",
-        view_num:"112",
-        collect:"96"
-      },
-  ]
-    this.setData({
-      posts_content
-    });
+      complete: function() {
+        // complete
+      }
+    })
+   
   },
 
   /**
