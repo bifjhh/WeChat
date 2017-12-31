@@ -77,6 +77,28 @@
     + 使用wx.navigateTo({}) wx.redirectTo({})方法 改变页面路径，完成跳转
       + wx.navigateTo  保留当前页面，跳转到应用内某个页面，可以返回当前页面
       + wx.redirectTo 关闭当前页面，跳转到应用内某个页面
-
   - bind    事件绑定不会阻止事件向上冒泡
   - catch   事件绑定可以阻止冒泡事件向上冒泡
+
+#### 使用require 方法加载外部js文件
+  - 首先外部js文件需要使用 module.exports 方法导出
+  ```javascript
+  // ES5
+    module.exports = {
+      变量名:要导出的内容,
+      变量名:要导出的内容
+    }
+  // ES6
+  export default {
+    local_database
+  };  
+  ```
+  - 使用require方法 加载需要使用的js文件
+  ```javascript
+    // ES5
+    var post = require(相对路径);
+    // 只能使用相对路径
+    // ES6
+    import postsData from '../data/posts-data.js'
+  ```
+  

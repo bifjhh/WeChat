@@ -22,7 +22,13 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/posts/posts"
+				}
+			]
 		}
 	}
 }

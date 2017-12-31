@@ -1,4 +1,8 @@
 // pages/posts/posts.js
+// ES5
+// var postsData = require('../data/posts-data.js')
+// ES6
+import postsData from '../data/posts-data.js'
 Page({
 
   /**
@@ -12,7 +16,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
+    this.setData({
+      posts_content: postsData.local_database
+    });
+    /* wx.request({
       url: 'https://www.easy-mock.com/mock/5a1b963ffc9bad5c3ee5308b/example/',//自己虚拟接口完成新闻列表渲染
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
@@ -31,7 +38,7 @@ Page({
       complete: function() {
         // complete
       }
-    })
+    }) */
    
   },
 
