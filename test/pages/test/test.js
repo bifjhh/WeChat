@@ -8,14 +8,28 @@ Page({
     open:'',
     "words_result":{}
   },
- 
+  userInfo(){
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res.rawData)
+        var userInfo = res.userInfo
+        var nickName = userInfo.nickName
+        var avatarUrl = userInfo.avatarUrl
+        var gender = userInfo.gender //性别 0：未知、1：男、2：女
+        var province = userInfo.province
+        var city = userInfo.city
+        var country = userInfo.country
+      }
+    })
+
+  },
   scan(){
     wx.login({
       success: function (res) {
         console.log(res)
         if (res.code) {
           // 发起网络请求
-         /*  wx.request({
+          wx.request({
             url: 'http://192.168.0.120:8080/bantu/wxuser/login',
             data: {
               appid:'wx942a74c19e682464',
@@ -25,8 +39,9 @@ Page({
             success: function (res) {
               console.log(res.data.openid)
             }
-          }) */
-          wx.request({
+          })
+          
+          /* wx.request({
             url: 'http://192.168.0.120:8080/bantu/wxuser/login',
             data: {
               appid:'wx942a74c19e682464', 
@@ -46,7 +61,7 @@ Page({
             success: function (res) {
               console.log(res.data)
             }
-          })
+          }) */
         } else {
           console.log('获取用户登录态失败！' + res.errMsg)
         }

@@ -1,5 +1,6 @@
 <!--pages/test/test.wxml-->
 <button bindtap='scan'>登录测试</button>
+<button bindtap='scan'>获取code生成open</button>
 <button bindtap='post'>post测试</button>
 <button bindtap='ocr'>ocr</button>
 <button bindtap='zhifu'>测试支付</button>
