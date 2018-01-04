@@ -359,8 +359,24 @@ Page({
        */
       onLoad(options) {
         var _this=this;
-        wx.login({
+        var useInfo = '';
+        wx.getUserInfo({
           success: function (res) {
+            console.log('个人信息')
+            console.log(res)
+            useInfo = res.userInfo;
+            console.log('useInfo')
+            console.log(useInfo)
+            // var nickName = useInfo.nickName
+            // var avatarUrl = useInfo.avatarUrl
+            // var gender = useInfo.gender //性别 0：未知、1：男、2：女
+            // var province = useInfo.province
+            // var city = useInfo.city
+            // var country = useInfo.country
+          }
+        })
+        wx.login({
+        /*  success: function (res) {
             console.log('1')
             console.log(res)
             wx.getUserInfo({
@@ -410,63 +426,73 @@ Page({
             } else {
               console.log('获取用户登录态失败！' + res.errMsg)
             }
-          }
-              /* success: function (res) {
-                console.log(res)
-                if (res.code) {
-                  var userInfo = '';
-                  wx.getUserInfo({
-                    success: function (res) {
+        } */
+          success: function (res) {
+                      console.log('code')
                       console.log(res)
-                      // console.log(res.userInfo)
-                      // userInfo = res.userInfo
-                      // var nickName = userInfo.nickName
-                      // var avatarUrl = userInfo.avatarUrl
-                      // var gender = userInfo.gender //性别 0：未知、1：男、2：女
-                      // var province = userInfo.province
-                      // var city = userInfo.city
-                      // var country = userInfo.country
-                    }
-                  })
-                  wx.request({
-                      url: 'http://172.20.10.14:8080/bantu/wxuser/login',
-                      data: {
-                        appid: 'wx942a74c19e682464',
-                        secret: '5dc91c6b4c234e6c90436f5f5d0043e5',
-                        code: res.code,
-                        // user_nickname: userInfo.nickName,
-                        // user_gender: userInfo.gender,
-                        // user_province: userInfo.province,
-                        // user_city: userInfo.city,
-                        // user_country: userInfo.country,
-                        // user_deptpic: userInfo.avatarUrl
-                        user_nickname: 'Be the best version of you',
-                        user_gender: '1',
-                        user_province: 'zh_CN',
-                        user_city: 'zh_CN',
-                        user_country: 'Iceland',
-                        user_deptpic: 'https://wx.qlogo.cn/mmopen/vi_32/J5ENfX2xwBfticEPdBbaxUn1EVEZVKl8M04SjLCddJiaXWbk7uzwZ29wyqibictFxdibobkbDu0Wp9LkZRmVq2uHSvg/0'
-                      },
-                      method: "POST",
-                      success: function (res) {
-                        console.log(res.data.openid)
-                        // if (res.data != null && res.data != undefined && res.data != '') {
-                          // wx.setStorageSync("openid", res.data.openid); //将获取的openid存到缓存中   
-                          console.log(res);
-                          _this.setData({
-                            open: res.data.openid,
-                            userId: res.data.userid
-                          });
-                          console.log(this.data);
-                          // console.log(this.data.open);
-                          // }
+                      /* wx.getUserInfo({
+                        success: function (res) {
+                          console.log('个人信息')
+                          console.log(res.userInfo)
+                          // console.log(res.userInfo)
+                          // userInfo = res.userInfo
+                          // var nickName = userInfo.nickName
+                          // var avatarUrl = userInfo.avatarUrl
+                          // var gender = userInfo.gender //性别 0：未知、1：男、2：女
+                          // var province = userInfo.province
+                          // var city = userInfo.city
+                          // var country = userInfo.country
                         }
-                      })
+                      }) */
+                      if (res.code) {
+                        console.log('发起网络请求')
+                        // 发起网络请求
+                        console.log(useInfo)
+                        for (var k in useInfo) {
+                          if(!useInfo[k]){
+                            console.log(k);
+                            useInfo[k]='kong'
+                          }
+                          
+                        }
+                        wx.request({
+                          url: 'http://172.20.10.14:8080/bantu/wxuser/login',
+                          data: {
+                            appid: 'wx942a74c19e682464',
+                            secret: '5dc91c6b4c234e6c90436f5f5d0043e5',
+                            code: res.code,
+                            user_nickname: useInfo.nickName,
+                            user_gender: useInfo.gender,
+                            user_province: useInfo.province,
+                            user_city: useInfo.city,
+                            user_country: useInfo.country,
+                            user_deptpic: useInfo.avatarUrl
+                            // user_nickname: 'Be the best version of you',
+                            // user_gender: '1',
+                            // user_province: 'zh_CN',
+                            // user_city: 'zh_CN',
+                            // user_country: 'Iceland',
+                            // user_deptpic: 'https://wx.qlogo.cn/mmopen/vi_32/J5ENfX2xwBfticEPdBbaxUn1EVEZVKl8M04SjLCddJiaXWbk7uzwZ29wyqibictFxdibobkbDu0Wp9LkZRmVq2uHSvg/0'
+                          },
+                          header: {
+                            "content-type": "application/x-www-form-urlencoded"
+                          },
+                          method: "POST",
+                          success: function (res) {
+                            console.log('open')
+                            console.log(res)
+                            _this.setData({
+                              open: res.data.resObject.openid,
+                              userId: res.data.resObject.userid,
+                            })
+                            console.log("data");
+                            console.log(_this.data);
+                          }
+                        })
+                      } else {
+                        console.log('获取用户登录态失败！' + res.errMsg)
+                      }
                   }
-                  else {
-                    console.log('获取用户登录态失败！' + res.errMsg)
-                  }
-                } */
               });
           },
 
