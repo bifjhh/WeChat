@@ -1,26 +1,27 @@
 # 目录
 - doy1
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/doy1)
 - doy02
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/doy02)
 - doy03
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/doy03)
 - itday01
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/itdoy01)
 - itday02
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/itdoy02)
 - locally-life
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/locally-life)
 - muke
-  + 练习
+  + [练习](https://github.com/bifjhh/WeChat/tree/master/muke)
 - weapp-locally-master
-  + 练习
+  + [本地生活小程序](https://github.com/bifjhh/WeChat/tree/master/weapp-locally-master)
 - wechat
-  + 练习
+  + [微信小程序实现移动端商城](https://github.com/bifjhh/WeChat/tree/master/wechat)
 - test
+  + [接口测试](https://github.com/bifjhh/WeChat/tree/master/test)
   + 各种API接口测试  
 - ReaderMovie
-  + 小程序项目实战
+  + [小程序项目实战](https://github.com/bifjhh/WeChat/tree/master/ReaderMovie)
 
 # 小程序的定义
 - 不需要下载安装，可以立即使用
@@ -204,21 +205,6 @@
     + div是在HTML中书写结构的文件
   - 小程序内的单位rpx
     + rpx与750px设计图是1 ：1的 可以直接实用rpx来实现效果图的样式
-
-
-### 制作项目启动页面  
-  - 使用display: flex;布局，快速完成页面排版
-  - 在wxss中书写类名样式，无需在wxml文件中引入，直接添加类名即可实用效果
-  - rpx能够适用于各种不同的机型分辨率，强烈建议使用
-  - 修改样式，在app.wxss中设置全局样式
-  - 设置启动页样式（按照psd设计图还原）
-  - 页面默认的容器--pege（类似于html标签）
-  - 配置页面导航栏顶端效果（修改json文件中的window配置）
-
-### 使用Swiper组件构建轮播图
-  - 修改swiper标签样式调整轮播图
-  - 设置image图片大小
-  - 自定义轮播整体样式，小点，时间，等
 
 #### 修改页面配置文件 .json
   - 因为页面配置文件只能修改window内的样式。所以在页面配置文件内不需要添加windo
