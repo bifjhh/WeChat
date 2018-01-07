@@ -11,6 +11,7 @@ Page({
     this.setData({
       posts_content: postsData.local_database
     });
+    console.log(this.data.posts_content)
     /* wx.request({
       url: 'https://www.easy-mock.com/mock/5a1b963ffc9bad5c3ee5308b/example/',//自己虚拟接口完成新闻列表渲染
       data: {},

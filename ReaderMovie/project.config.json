@@ -21,12 +21,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "list",
-					"pathName": "pages/posts/posts"
+					"pathName": "pages/posts/posts",
+					"query": ""
 				}
 			]
 		}

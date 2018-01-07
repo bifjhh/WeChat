@@ -1,3 +1,4 @@
+<import src="./post-item/post-item-template.wxml" />
 <view>
     <swiper indicator-dots="{{true}}" autoplay="{{true}}" autoplay="5000">
             <swiper-item>
@@ -10,7 +11,9 @@
                 <image src="/images/wx.png" class="" />
             </swiper-item>
     </swiper>
-	<block>
+	<block wx:for="{{posts_content}}"> 
+		<template is="postList" data="{{item}}">
+		</template>	
 		<!-- 
 		<view wx:for="{{posts_content}}" class="post-container">
 			<view class="post-author-date">
