@@ -1,0 +1,9 @@
+/* pages/tuod/tuod.wxss */
+view{
+    /* width: 100%; */
+    margin: 0 20rpx;
+    width: 700rpx;
+    height: 400rpx;
+    background-color: antiquewhite;
+    position: absolute;
+}

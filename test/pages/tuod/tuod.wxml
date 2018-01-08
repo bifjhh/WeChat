@@ -1,0 +1,5 @@
+<!--pages/tuod/tuod.wxml-->
+<text>鼠标拖动效果</text>
+<view bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" style="top:{{top}}rpx">
+    
+</view>
