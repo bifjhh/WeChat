@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/test/test",
     "pages/index/index",
     "pages/ocr/ocr",
@@ -10,12 +10,13 @@
     "pages/zhifu/zhifu",
     "pages/camera/camera",
     "pages/camera2/camera2",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/tuod/tuod"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
