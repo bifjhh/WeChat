@@ -1,16 +1,16 @@
-<view class='box1' style="top:{{tops[0]}}rpx;z-index:{{zindex[0]}};opacity:.{{zindex[0]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+<view class='box1' id="0" style="top:{{tops[0]}}rpx;z-index:{{zindex[0]}};opacity:.{{zindex[0]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
 我是一号 
 <view>我的层级-我的透明度{{zindex[2]}}</view>
 <view>我的位置top:{{tops[0]}}</view>
 </view>
 
-<view class='box2' style="top:{{tops[1]}}rpx;z-index:{{zindex[1]}};opacity:.{{zindex[1]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+<view class='box2' id="1" style="top:{{tops[1]}}rpx;z-index:{{zindex[1]}};opacity:.{{zindex[1]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
 我是二号 
 <view>我的层级-我的透明度{{zindex[2]}}</view>
 <view>我的位置top:{{tops[1]}}</view>
 </view>
 
-<view class='box3' style="top:{{tops[2]}}rpx;z-index:{{zindex[2]}};opacity:.{{zindex[2]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
+<view class='box3' id="2" style="top:{{tops[2]}}rpx;z-index:{{zindex[2]}};opacity:.{{zindex[2]}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend'>
 我是三号 
 <view>我的层级-我的透明度{{zindex[2]}}</view>
 <view>我的位置top:{{tops[2]}}</view>

@@ -11,14 +11,20 @@ Page({
     start: { "x": 0, "y": 0 },
     // stop:{"x":0,"y":0}
     tops: [517, 367, 667],
-    zindex: [9, 8, 7]
+    zindex: [9, 8, 7],
+    current:0,
+    id:0
 
   },
 
   touchstart(e) {/* 手势开始滑动 */
-    console.log("");
     console.log(e);
     let evt = e.changedTouches[0];
+    let id = e.currentTarget.id;
+    console.log(id);
+    this.setData({
+      id
+    })
     let start = { "x": evt.clientX, "y": evt.clientY };
     this.setData({ start });
     // console.log("手势开始滑动" + "-----touchstart");
@@ -29,6 +35,15 @@ Page({
   touchmove(e) {/* 手势滑动中 */
     console.log(e);
     // console.log("手势滑动中"+"-----touchmove");
+    // console.log((this.data.tops.length - 1)/2)
+    // var top = e.changedTouches[0].pageY;
+    var my = this.data.tops;
+    // var i = (this.data.tops.length - 1) / 2;
+    // my[0]=top;
+    // console.log(my[0])
+    // this.setData({
+    //   tops: my
+    // })
     
   },
 
