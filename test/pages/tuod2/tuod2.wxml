@@ -20,7 +20,7 @@
   <!--名片夹层  -->
   <view class='index_cards' style='display:{{hide}}'>
     <view class='index_cards_box'>
-      <view wx:for="{{card_top}}" wx:key="{{index}}" id="{{index}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend' class="index_my_card" style="top:{{tops[index]}}rpx;z-index:{{index>1?card_top.length-index:index}}">
+      <view wx:for="{{card_top}}" wx:key="{{index}}" id="{{index}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend' class="index_my_card" style="top:{{tops[index]}}rpx;z-index:{{index>1?card_top.length-index:card_top.length+index}}">
         <view class='my_card_min' wx:if="{{1>=index}}">
           <view class='min_l'>
             <image src="../../image/card-me.png" />

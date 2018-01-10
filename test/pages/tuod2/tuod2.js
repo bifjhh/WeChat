@@ -11,6 +11,7 @@ Page({
     box: 400,
     tops: [],//用来存储数组距离
     card_top: [0, 1, 2, 3, 4, 5],//模拟数据数组
+    zindex: [8, 7, 6, 5, 4, 3],//zindex数据数组
     ztop: [],//点击时暂存数组数据
     tid: 0,//记录点击时的名片的索引
     topd: 0,//点击时记录鼠标在盒子里的位置
@@ -94,9 +95,10 @@ Page({
     // console.log(topd)
     console.log('')
     console.log(top)
-    if (top <= tops[id - 1] + 50 || top <= 0) {
-      return;
-    }
+    // if (top <= tops[id - 1] + 50 || top <= 0) {
+    //   console.log("return ")
+    //   return;
+    // }
     // 改变
     tops[id] = top;
     this.setData({ tops })
