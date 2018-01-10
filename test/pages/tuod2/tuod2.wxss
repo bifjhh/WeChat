@@ -1,0 +1,391 @@
+/**index.wxss**/
+
+/* @import "../../template/tabBar.wxss"; */
+/* @import "../../template/add_transition.wxss"; */
+page {
+    background-color: #f1ece1;
+}
+
+.box {
+    background-color: #f2ebe1;
+    margin-top: 62rpx;
+}
+
+.nav_box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60rpx;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    font-size: 30rpx;
+    color: rgb(106, 90, 77);
+    background-color: #fbf7ed;
+    z-index: 10;
+}
+
+.add_nav {
+    text-align: center;
+    background-color: #6b594b;
+    width: ;
+}
+
+.nav view {
+    text-align: left;
+}
+
+.nav-me {
+    width: 200rpx;
+    height: 50rpx;
+    float: left;
+    margin-left: 160rpx;
+}
+
+.nav-cards {
+    width: 150rpx;
+    height: 50rpx;
+    float: right;
+    margin-right: 166rpx;
+}
+
+.slider {
+    position: absolute;
+    height: 5rpx;
+    background-color: rgb(107, 89, 76);
+    top: 28px;
+    transition: all 0.2s;
+}
+
+.index_card {
+    position: relative;
+    width: 100%;
+    /* height: 1048rpx; */
+    background-color: #f2ebe1;
+}
+
+.add_card {
+    position: absolute;
+    top: 239rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Tishi {
+    font-size: 0.96rem;
+    color: #57534b;
+    text-align: center;
+}
+
+.add_button button {
+    width: 250rpx;
+    margin-top: 53rpx;
+    background-color: #6b5a4d;
+    color: #fffef2;
+}
+
+.index_cards {
+    width: 100%;
+    /* height: 1048rpx; */
+    background-color: #f2ebe1;
+}
+
+.index_cards_box {
+    width: 700rpx;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 80rpx;
+    position: relative;
+}
+
+.index_cards_box .index_my_card {
+    box-sizing: border-box;
+    width: 700rpx;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.index_my_card .my_card_min {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50rpx;
+    background-color: #efe795;
+    padding: 0 20rpx;
+    box-shadow: 0px 2px 2px #938e64;
+}
+
+.min_l {
+    display: flex;
+    justify-content: left;
+    float: left;
+}
+
+.min_l image {
+    width: 31rpx;
+    height: 33rpx;
+    margin-top: 8.5rpx;
+}
+
+.min_l text {
+    color: #fff;
+    font-size: 26rpx;
+    line-height: 48rpx;
+    margin-left: 10rpx;
+}
+
+.min_r {
+    float: right;
+    width: 38rpx;
+    height: 50rpx;
+    text-align: center;
+    /* flex-direction: column; */
+    background-color: #efe795;
+    padding: 0;
+    position: relative;
+}
+
+.min_r::after {
+    border: none;
+}
+
+.min_r_img {
+    position: absolute;
+    top: 8rpx;
+    left: 0;
+    width: 38rpx;
+    height: 38rpx;
+}
+
+.min_r image {
+    margin-top: 8rpx;
+    width: 38rpx;
+    height: 38rpx;
+}
+
+.index_cards_box .my_card_body {
+    /* margin-top: 6rpx; */
+    width: 700rpx;
+    height: 390rpx;
+    position: relative;
+    /* background: url('http://bantu.com/template_2.png') no-repeat center; */
+    background: url('https://www.fmlcfs.top/BT/bg_img/template_2.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.my_card_body .title {
+    /* height: 48rpx; */
+    width: 700rpx;
+    line-height: 62rpx;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 8rpx;
+    color: #000;
+}
+
+.my_card_body>view {
+    position: absolute;
+}
+
+.my_card_body .card_name {
+    letter-spacing: 6rpx;
+    width: 162rpx;
+    height: 80rpx;
+    text-align: left;
+    color: #000;
+    font-size: 1.28rem;
+    left: 50rpx;
+    top: 126rpx;
+}
+
+.my_card_body .technical {
+    width: 230rpx;
+    height: 106rpx;
+    right: 228rpx;
+    top: 124rpx;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+.my_card_body .phone {
+    width: 340rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    bottom: 68rpx;
+    left: 62rpx;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.my_card_body .phone text {
+    letter-spacing: 5rpx;
+}
+
+.my_card_body .text {
+    width: 100%；;
+}
+
+.mask {
+    width: 100%;
+    height: 1040rpx;
+    position: fixed;
+    top: 62rpx;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.my_card {
+    width: 100%;
+}
+
+.my_card_box {
+    width: 700rpx;
+    margin: 0 auto;
+    padding-top: 20rpx;
+    position: relative;
+}
+
+.my_card_box>image {
+    width: 100%;
+    height: 365rpx;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20rpx; */
+}
+
+.img_box {
+    width: 105rpx;
+    height: 105rpx;
+    /* background-color: #fff; */
+    /* border-radius: 50%; */
+    text-align: center;
+}
+
+.img_box>image {
+    margin-top: 24rpx;
+}
+
+.foot_text {
+    margin-top: 10rpx;
+    width: 104rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    text-align: center;
+    color: #6b594c;
+    font-size: 28rpx;
+}
+
+.template_img {
+    width: 100%;
+    padding-top: 20rpx;
+    width: 700rpx;
+    height: 340rpx;
+    background-image: url("https://www.fmlcfs.top/BT/bg_img/template_bg.png");
+    background-position: center;
+    background-size: 700rpx 340rpx;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    height: 48rpx;
+    line-height: 48rpx;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 6rpx;
+    color: #fff;
+}
+
+.card_name {
+    letter-spacing: 6rpx;
+    width: 162rpx;
+    height: 80rpx;
+    text-align: left;
+    color: #000;
+    font-size: 1.28rem;
+    position: absolute;
+    left: 50rpx;
+    top: 116rpx;
+}
+
+.technical {
+    width: 230rpx;
+    height: 106rpx;
+    position: absolute;
+    right: 228rpx;
+    top: 114rpx;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+.phone {
+    width: 340rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    position: absolute;
+    bottom: 68rpx;
+    left: 62rpx;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.phone text {
+    letter-spacing: 5rpx;
+}
+
+.back_img {
+    width: 700rpx;
+    position: relative;
+    left: 0;
+    transition: all ease-in-out 0.5s;
+    background-color: #fbf7ee;
+    padding-left: 40rpx;
+    padding-top: 40rpx;
+}
+
+.text_back_img {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #221e15;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.back_img_about {
+    overflow: hidden;
+}
+
+.square {
+    width: 35rpx;
+    height: 35rpx;
+    background-color: #1b7ec2;
+    float: left;
+}
+
+.back_img_about_title {
+    width: 200rpx;
+    height: 55rpx;
+    float: left;
+    margin-top: -5rpx;
+    margin-left: 30rpx;
+    font-weight: 700;
+}
+
+.back_img_about_text {
+    text-indent: 2em;
+    font-size: 0.8rem;
+    padding-right: 20rpx;
+    padding-bottom: 30rpx;
+}
+
+.load {
+    width: 300rpx;
+    height: 300rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}

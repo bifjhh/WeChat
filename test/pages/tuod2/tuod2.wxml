@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<!-- <import src="tabBar.wxml" /> -->
+  <!--导航  -->
+  <view class='nav_box'>
+    <view class='nav'>
+      <view>
+        <view class='nav-me' bindtap='nav_me'>
+          <text>我的名片</text>
+        </view>
+      </view>
+      <view>
+        <view class='nav-cards' bindtap='nav_cards'>
+          <text>名片夹</text>
+        </view>
+      </view>
+    </view>
+    <!--滑动条  -->
+    <view class='slider' style='left:{{sliderLeft}}rpx;width:{{sliderWidth}}rpx;top:{{top}}px'></view>
+  </view>
+  <!--名片夹层  -->
+  <view class='index_cards' style='display:{{hide}}'>
+    <view class='index_cards_box'>
+      <view wx:for="{{card_top}}" wx:key="{{index}}" id="{{index}}" bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchcancel='touchcancel' bindtouchend='touchend' class="index_my_card" style="top:{{tops[index]}}rpx;z-index:{{index>1?card_top.length-index:index}}">
+        <view class='my_card_min' wx:if="{{1>=index}}">
+          <view class='min_l'>
+            <image src="../../image/card-me.png" />
+            <text>张振华</text>
+          </view>
+          <button class='min_r' open-type="share">
+            <image class='min_r_img' src="../../image/card-share.png" />
+          </button>
+        </view>
+        <view class='my_card_body'>
+          <view class="title">
+            张家口龙之梦创新科技有限公司
+          </view>
+          <view class="card_name">
+            张正华
+          </view>
+          <view class="technical">
+            <view>执行董事</view>
+            <view>经 理</view>
+          </view>
+          <view class="phone">
+            手 机 :
+            <text bindtap="phone" data-phone="15638113849">15638113849</text>
+          </view>
+        </view>
+         <view class='my_card_min' wx:if="{{index>1}}">
+          <view class='min_l'>
+            <image src="../../image/card-me.png" />
+            <text>张振华</text>
+          </view>
+          <button class='min_r' open-type="share">
+            <image class='min_r_img' src="../../image/card-share.png" />
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+<!--tabBar  -->
+
+<!-- <template is="tabBar"/>  -->

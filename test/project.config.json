@@ -25,7 +25,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -79,6 +79,12 @@
 					"id": -1,
 					"name": "拖动",
 					"pathName": "pages/tuod/tuod",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "滑动2",
+					"pathName": "pages/tuod2/tuod2",
 					"query": ""
 				}
 			]

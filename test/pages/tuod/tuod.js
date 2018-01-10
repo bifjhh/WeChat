@@ -21,7 +21,7 @@ Page({
   },
 
   touchmove(e) {/* 手势滑动中 */
-    // console.log(e);
+    console.log(e);
     // console.log("手势滑动中"+"-----touchmove");
     // console.log(evt)
     // console.log(evt.pageY)

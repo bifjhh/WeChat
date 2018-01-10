@@ -1,17 +1,16 @@
-/* pages/touch/touch.wxss */
-page{
-   overflow:hidden; 
+.bc_green{
+    background-color: green
 }
-.body{
+.bc_red {
+    background-color: red
+}
+.bc_yellow{
+    background-color: yellow
+}
+.bc_blue{
+    background-color: blue
+}
+
+scroll-view view{
     height: 100%;
-     overflow:hidden;  
-    
-}
-.body view{
-    line-height: 60rpx;
-    font-size: 30rpx;
-    color: #000;
-    margin-top: 20rpx;
-    text-align: center;
-    background-color: antiquewhite;
 }
