@@ -18,7 +18,7 @@ Page({
         if (res.code) {
           // 发起网络请求
           wx.request({
-            /*  url: 'http://192.168.191.5:8080/bantu/wxuser/login',
+            /*  url: 'http://192.168.2.115:8080/bantu/wxuser/login',
                   data: {
                     appid:'wx942a74c19e682464',
                     code: res.code,
@@ -31,7 +31,7 @@ Page({
           }) */
 
             // wx191.4
-            url: 'http://192.168.191.5:8080/bantu/wxuser/login',
+            url: 'http://192.168.2.115:8080/bantu/wxuser/login',
             data: {
               appid: 'wx942a74c19e682464',
               secret: '5dc91c6b4c234e6c90436f5f5d0043e5',
@@ -59,7 +59,7 @@ Page({
   },
   post() {
     wx.request({
-      url: 'http://192.168.191.5:8080/bantu/wxuser/getSessionKeyOropenid', //仅为示例，并非真实的接口地址
+      url: 'http://192.168.2.115:8080/bantu/wxuser/getSessionKeyOropenid', //仅为示例，并非真实的接口地址
       data: {
         nickName: "我问问",
         avatarUrl: "avatarUrl",
@@ -86,7 +86,7 @@ Page({
         // console.log(res)//图片临时路径
         var tempFilePaths = res.tempFilePaths
         wx.uploadFile({
-          url: 'http://192.168.191.5:8080/bantu/bantuOCR/getTextByOrc', //仅为示例，非真实的接口地址
+          url: 'http://192.168.2.115:8080/bantu/bantuOCR/getTextByOrc', //仅为示例，非真实的接口地址
           filePath: tempFilePaths[0],
           name: 'pic',
           formData: {
@@ -125,7 +125,7 @@ Page({
     var open = this.data.open;
     console.log(open)
     wx.request({
-      url: 'http://192.168.191.5:8080/bantu/wxpaystwo/pre',
+      url: 'http://192.168.2.115:8080/bantu/wxpaystwo/pre',
       data: {
         openid: open,
         appId: 'wx942a74c19e682464',
@@ -203,7 +203,7 @@ Page({
   },
   test() {
     wx.request({
-      url: 'http://192.168.191.5:8080/bantu/user/cha',
+      url: 'http://192.168.2.115:8080/bantu/user/cha',
       data: {
 
 
@@ -224,7 +224,7 @@ Page({
         console.log(res.tempFilePath)
         var tempFilePath = res.tempFilePath
         wx.uploadFile({
-          url: 'http://192.168.191.5:8080/bantu/bantuOCR/getTextBypSpeech', //getTextBypSpeech
+          url: 'http://192.168.2.115:8080/bantu/bantuOCR/getTextBypSpeech', //getTextBypSpeech
           filePath: tempFilePath,
           name: 'pSpeech',
           formData: {
@@ -272,7 +272,7 @@ Page({
             const { tempFilePath } = res
             
             // wx.uploadFile({
-            //   url: 'http://192.168.191.5:8080/bantu/bantuOCR/getTextBypSpeech', //getTextBypSpeech
+            //   url: 'http://192.168.2.115:8080/bantu/bantuOCR/getTextBypSpeech', //getTextBypSpeech
             //   filePath: tempFilePath,
             //   name: 'pSpeech',
             //   formData: {
@@ -336,7 +336,7 @@ Page({
     var _this = this
     console.log(_this.data.userId);
     wx.request({
-      url: 'http://192.168.191.5:8080/bantu/CreateConnect/clickShare',
+      url: 'http://192.168.2.115:8080/bantu/CreateConnect/clickShare',
       data: {
         userId: _this.data.userId
       },
@@ -397,7 +397,7 @@ Page({
           if (res.code) {
             // 发起网络请求
             wx.request({
-              url: 'http://192.168.191.5:8080/bantu/wxuser/login',
+              url: 'http://192.168.2.115:8080/bantu/wxuser/login',
               data: {
                 appid: 'wx942a74c19e682464',
                 secret: '5dc91c6b4c234e6c90436f5f5d0043e5',
@@ -457,7 +457,7 @@ Page({
 
           }
           wx.request({
-            url: 'http://192.168.191.5:8080/bantu/wxuser/login',
+            url: 'http://192.168.2.115:8080/bantu/wxuser/login',
             data: {
               appid: 'wx942a74c19e682464',
               secret: '5dc91c6b4c234e6c90436f5f5d0043e5',

@@ -10,7 +10,7 @@ Page({
     dist: 50,
     box: 400,
     tops: [],//用来存储数组距离
-    card_top: [0, 1, 2, 3, 4, 5],//模拟数据数组
+    card_top: [0, 1],//模拟数据数组
     zindex: [8, 7, 6, 5, 4, 3],//zindex数据数组
     ztop: [],//点击时暂存数组数据
     tid: 0,//记录点击时的名片的索引
@@ -84,11 +84,17 @@ Page({
     console.log(e)
   },
   touchmove(e) {
+  
     // 滑动进行
     // console.log(e)
     var tops = this.data.tops;
     var top = e.touches[0].pageY;
     var id = this.data.tid;
+    for (var i in tops){
+      if (tops[i]>1){
+        
+      }
+    }
     // var ftop = e.currentTarget.offsetTop;
     var topd = this.data.topd;
     top = top - topd;

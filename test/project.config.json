@@ -25,7 +25,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -85,6 +85,18 @@
 					"id": -1,
 					"name": "滑动2",
 					"pathName": "pages/tuod2/tuod2",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "拖动-demo",
+					"pathName": "pages/tuodong/tuodong",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "滑动 -- 3d",
+					"pathName": "pages/hd/hd",
 					"query": ""
 				}
 			]

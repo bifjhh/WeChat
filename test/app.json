@@ -12,7 +12,9 @@
     "pages/camera2/camera2",
     "pages/logs/logs",
     "pages/tuod/tuod",
-    "pages/tuod2/tuod2"
+    "pages/tuod2/tuod2",
+    "pages/hd/hd",
+    "pages/tuodong/tuodong"
   ],
   "window": {
     "backgroundTextStyle": "light",

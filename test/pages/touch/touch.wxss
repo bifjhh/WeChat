@@ -1,5 +1,7 @@
 .bc_green{
-    background-color: green
+    background-color: green;
+    position: absolute;
+    z-index: 9;
 }
 .bc_red {
     background-color: red
@@ -10,7 +12,10 @@
 .bc_blue{
     background-color: blue
 }
-
+scroll-view {
+    height: 1000px;
+}
 scroll-view view{
-    height: 100%;
+    width: 100%;
+    height: 200px;
 }
