@@ -1,0 +1,38 @@
+/**index.wxss**/
+page{
+	padding: 20rpx; 
+	box-sizing: border-box;  
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+.card{
+	width: 100%;
+	height: 400rpx;
+	background-color: skyblue;
+	position: absolute;
+	border-radius: 16rpx;
+	overflow: hidden;
+	margin-top: 20rpx;
+	position: absolute;
+	left: 0;
+	transition: transform .5s ease-out;	
+}
+
+.card-nav{
+	width: 100%;
+	background-color: #f2f2f2;
+	height: 60rpx;
+	text-align: center;
+}
+
+.card-body{
+	height: 340rpx;
+}

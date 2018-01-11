@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+	<view class='card' style='transform:translate3d(0px, 0px, 0px);'>
+		<view class='card-nav'>1</view>
+		<view class='card-body'></view>
+	</view>
+	<view class='card' data-index="1" style='transform:translate3d(0px, {{setY[1]}}rpx, 0px);top:420rpx' bindtouchstart='cardTouchStart' bindtouchmove='cardTouchMove' bindtouchend='cardTouchEnd'>
+		<view class='card-nav'>2</view>
+		<view class='card-body'></view>
+	</view>
+	<view class='card' data-index="2" style='transform:translate3d(0px, {{setY[2]}}rpx, 0px);top:{{420+60}}rpx; z-index：{{1}}' bindtouchstart='cardTouchStart' bindtouchmove='cardTouchMove' bindtouchend='cardTouchEnd'>
+		<view class='card-body'></view>
+		<view class='card-nav'>3</view>
+	</view>
+</view>
