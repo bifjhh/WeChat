@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container" bindtouchstart='cardTouchStart' bindtouchmove='cardTouchMove' bindtouchend='cardTouchEnd' bindscroll="scroll"> 
+	<view wx:for="{{list}}"  wx:key="index" data-index="{{index}}" class='card' style="top:{{index>=1?index*60+distance-60:index*60}}rpx" >
+		<view class='card-nav'>{{index}}</view>
+		<view class='card-body'>{{index}}</view>
+	</view>
+	
+</view>
