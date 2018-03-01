@@ -1,0 +1,10 @@
+<!--pages/couple/couple.wxml-->
+<view class='couple_textaera'>
+  <form bindsubmit="formSubmit" class='couple_form'>
+    <textarea placeholder="请提出您的意见和建议" bindinput="auto" show-confirm-bar='{{false}}' maxlength="400" cursor-spacing="-200" name="feedback_text" class='couple'></textarea >
+    <view class='input' style='overflow:hidden'><view class='' style='text-align:right;'>还可以输入<text>{{num}}</text>字</view></view>
+      <button class='couple_button'  formType="submit"  disabled='{{disable}}' loading="{{loading}}">提交</button> 
+  </form>
+
+</view>
+                             

@@ -1,0 +1,21 @@
+ <import src="../../template/bgcard.wxml" /> 
+ <view>
+<view class='index_cards' style="display:{{dshow}}">
+  <view class='add_card' style='display:{{show}}'>
+    <view class='Tishi'>您还没有收到名片哦</view>
+  </view>
+  <view class="index_cards_box" wx:if="{{show=='none'}}">
+    <view bindlongpress="del" wx:for="{{card_list}}" wx:key="{{index}}" data-info="{{item}}" class="index_my_card">
+        <button class="min_r"  data-card="{{item.mycard_cardid}}" bindtap="nav_card">
+         接收
+        </button>
+    <!--<form bindsubmit="submit" report-submit="true">
+    </form>-->
+      <view class="my_card_body" bindtap="nav_card" data-card="{{item.mycard_cardid}}">
+        <template is="bgcard{{item.mycard_templateid}}" data="{{item}}" />  
+        </view>
+    </view>
+  </view>
+</view>
+  
+</view>

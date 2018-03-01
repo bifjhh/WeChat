@@ -1,0 +1,142 @@
+/* pages/redact/redact.wxss */
+@import "../../template/bgcard.wxss";
+page{
+    background-color:#f1ece1;
+}
+.wrap{
+    width: 100%;
+    background-color: #f1ece1;
+    padding-top: 25rpx;
+    /* height: 100%; */
+}
+.template{
+    margin: 0 auto;
+    width: 700rpx;
+    /* padding-bottom: 80rpx; */
+    position: relative;
+    padding-bottom:50rpx;
+
+}
+.template_card{
+    margin: 0 auto;
+    width: 700rpx;
+    height: 340rpx;
+     background-image: url("https://www.fmlcfs.top/BT/bg_img/template_bg.png");
+    background-position: center;
+    background-size: 700rpx 340rpx;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.icon-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.arrow_right{
+    right: 0;
+}
+.arrow_left{
+    left: 0;
+}
+.title{
+    width: 100%;
+    height: 48rpx;
+    line-height: 48rpx;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing:6rpx;
+    color: #fff;
+}
+.card_name{
+    letter-spacing:6rpx;
+  width:162rpx;
+height:80rpx;
+
+    text-align: left;
+    color: #000;
+    font-size:1.28rem;
+    position:absolute;
+    left:50rpx;
+    top:116rpx;
+
+}
+.technical{
+    width:60%;
+    height: 106rpx;
+    position: absolute;
+    right:33rpx;
+    top:114rpx;
+    font-size:0.7rem;
+    color:#000;
+    /* overflow: hidden; */
+}
+.phone{
+    width:340rpx;
+    height:60rpx;
+    line-height: 60rpx;
+    position:absolute;
+    bottom:68rpx;
+    left:62rpx;
+    color:#000;
+    font-size:.8rem;
+}
+.phone text{
+    letter-spacing: 5rpx;
+}
+.magin_b{
+    margin-bottom: 16rpx;
+}
+.text{
+    color: #6b594b;
+    font-size: 0.9rem;
+}
+.form_item{
+    width: 100%;
+}
+.input{
+   margin-top:10rpx;
+width:100%;
+margin-bottom:20rpx;
+
+}
+.input>input{
+width:677rpx;
+height:75rpx;
+border:1rpx solid #6b594b;
+padding-left:10rpx;
+font-size:0.74rem;
+line-height:75rpx;
+background-color:#fff;
+padding-right:10rpx;
+}
+.but{
+    background-color: #6b594b;
+    color: #fff;
+    /* line-height: 65rpx; */
+    border-radius: 6rpx;
+    text-align: center;
+font-size:0.97rem;
+    padding-bottom: 10rpx;
+    margin-top:60rpx;
+}
+.big_input{
+    height: 148rpx;
+    
+}
+.big_input>textarea{
+ height:148rpx;
+width:677rpx;
+border:1rpx solid #6b594b;
+background-color:#fff;
+overflow:hidden;
+padding:0 10rpx;
+
+}
+.paging{
+  position:absolute;
+bottom:10rpx;
+font-size:0.7rem;
+right:10rpx;
+
+}

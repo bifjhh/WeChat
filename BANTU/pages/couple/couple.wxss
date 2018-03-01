@@ -1,0 +1,54 @@
+/* pages/couple/couple.wxss */
+page{
+  background-color:#f1ece1;
+}
+.couple_textaera{
+  /* width: 680rpx;
+  height: 500rpx; */
+  margin-top: 36rpx;
+  position: relative;
+}
+.couple_form{
+   width: 680rpx;
+  height: 300rpx;
+ 
+}
+.couple{
+    border-radius: 2rpx;
+    margin: 0 auto;
+  border: 1px solid rgb(153, 153, 153); 
+   width: 670rpx;
+  height: 300rpx; 
+  font-size: 0.74rem;
+  white-space: pre-wrap;
+  padding-right: 6rpx;
+   padding-left: 6rpx;
+  letter-spacing:4rpx;
+  /* text-indent:12px; */
+   padding-top: 6rpx; 
+   padding-bottom: 50rpx;
+}
+.couple_button{
+   width:682rpx;
+height:95rpx;
+background-color:#6b594c;
+margin-top:24px;
+border-radius:10rpx;
+color:#fff;
+line-height:95rpx;
+font-size:0.97rem;
+
+}
+.input{
+  width: 250rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  position: absolute;
+  bottom:144rpx;
+left:460rpx;
+  color:#ddd;
+font-size:0.7rem;
+
+
+}

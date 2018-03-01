@@ -1,0 +1,43 @@
+<template name="bgcard0">
+  <view  style='z-index:2;position:relative; width: 700rpx;  height: 415rpx;background-image: url(http://192.168.2.115:8080/bantu/images/bg/bgcard5.png); background-position: center;background-size: 700rpx 415rpx;border-radius: 20rpx;'>
+    <view style='height:60rpx;background-color:#273d54;position:absolute;top:110rpx;left:30rpx;line-height:60rpx;padding:0 20rpx;padding:0 30px;'>
+       <view style='color:#fff;font-size:1.1rem;float:left;'>{{inputValue0}}{{item.mycard_name}}</view>
+      <view style='color:#fff;font-size:0.75rem;float:left;padding-left:20rpx;margin-top:9rpx;'>{{inputValue1}}{{item.mycard_position}}</view> 
+    </view>
+      <view style='width:600rpx;height:60rpx;padding-left:28rpx;line-height:60rpx;position:absolute;top:222rpx;color:#263D54;font-weight:700;'>{{inputValue3}}{{item.mycard_companyname}}</view>
+      <view style='width:500rpx;height:72rpx;line-height:72rpx;color:#fff;position:absolute;bottom:64rpx;left:64rpx;letter-spacing:5rpx;font-size:0.8rem;'>{{inputValue2}}{{item.mycard_mobile}}</view>
+  </view>
+</template> 
+<template name="bgcard1">
+  <view  style='z-index:2;position:relative; width: 700rpx;  height: 415rpx;background-image: url(http://192.168.2.115:8080/bantu/images/bg/bgcard1.png); background-position: center;background-size: 700rpx 415rpx;border-radius: 20rpx;'>
+    <view  style='width:514rpx;height:50rpx;line-height:50rpx; position:absolute;right:28rpx;top:90rpx;font-size:0.92rem;overflow:hidden;'>{{inputValue3}}{{item.mycard_companyname}}</view><!--公司 --> 
+     <view  style='width:300rpx;height:50rpx;line-height:50rpx;position:absolute;top:160rpx;font-size:1rem;text-align:center;left:146rpx;'>{{inputValue0}}{{item.mycard_name}}</view><!--姓名 --> 
+    <view  style='position:absolute;font-size:0.8rem;left:128rpx;top:256rpx;'>{{inputValue1}}{{item.mycard_mobile}}</view>
+    <view  style=' width: 380rpx; height: 50rpx;text-align: left; position: absolute;left:128rpx;top: 322rpx;font-size: 0.8rem;overflow:hidden;'>{{inputValue2}}{{item.mycard_position}}</view>
+  </view>
+</template>
+<template name="bgcard2">
+  <view  style='z-index:2;position:relative; width: 700rpx;  height: 415rpx;background-image: url(http://192.168.2.115:8080/bantu/images/bg/bgcard2.png); background-position: center;background-size: 700rpx 415rpx;border-radius: 20rpx;'>
+    <view  style='width:550rpx;height:50rpx;position:absolute;top:86rpx;right:67rpx;text-align:right;'>{{inputValue0}}{{item.mycard_name}}</view>
+    <view  style='width:600rpx;height:50rpx;position:absolute;top:186rpx;right:67rpx;text-align:right;font-size:0.92rem;'>{{inputValue3}}{{item.mycard_companyname}}</view>
+    <view style='width:550rpx;height:40rpx;text-align:right;position:absolute;right:88rpx;bottom:48rpx;font-size:0.7rem;'>{{inputValue1}}{{item.mycard_mobile}}</view>
+    <view style='width:550rpx;height:40rpx;text-align:right;position:absolute;right:88rpx;bottom:108rpx; font-size:0.7rem; '>{{inputValue2}}{{item.mycard_position}}</view>
+  </view>
+</template>  
+<template name="bgcard3">
+    <view  style='z-index:2;position:relative; width: 700rpx;  height: 415rpx;background-image: url(http://192.168.2.115:8080/bantu/images/bg/bgcard3.png); background-position: center;background-size: 700rpx 415rpx;border-radius: 20rpx;'>
+       <view style='width:200rpx;height:80rpx;line-height:80rpx;position:absolute;top:236rpx;left:34rpx;font-size:1.2rem;'>{{inputValue0}}{{item.mycard_name}}</view>
+       <view style='width:380rpx;height:60rpx;overflow:hidden;line-height:60rpx;position:absolute;top:248rpx;left:220rpx;font-size:0.9rem;'>{{inputValue3}}{{item.mycard_companyname}}</view>
+       <view style="width:240rpx;height:50rpx;line-height:50rpx;position:absolute;bottom:20rpx;left:84rpx;font-size:0.7rem;">{{inputValue2}}{{item.mycard_position}}</view>
+       <view style='width:184rpx;height:50rpx;line-height:50rpx;position:absolute;bottom:20rpx;left:404rpx;font-size:0.7rem;overflow:hidden;'>{{inputValue1}}{{item.mycard_mobile}}</view>
+  </view>
+</template>  
+
+<template name="bgcard4">
+  <view  style='z-index:2;position:relative; width: 700rpx;  height: 415rpx;background-image: url(http://192.168.2.115:8080/bantu/images/bg/bgcard4.png); background-position: center;background-size: 700rpx 415rpx;border-radius: 20rpx;'>
+      <view style='width:636rpx;height:50rpx;line-height:50rpx;position:absolute;top:78rpx;text-align:right;font-size:0.9rem;color:#d4c9a6;letter-spacing:5rpx;'>{{inputValue0}}{{item.mycard_name}}</view>
+      <view style='height:40rpx;line-height:40rpx;font-size:0.7rem;color:#d4c9a6;position:absolute;top:134rpx;left:312rpx;border:1rpx dashed #d4c9a6;border-radius:19rpx;padding:0 10rpx;'>{{inputValue3}}{{item.mycard_companyname}}</view>
+      <view style='width:378rpx;height:50rpx;line-height:50rpx;position:absolute;bottom:124rpx;left:254rpx;font-size:0.65rem;color:#d4c9a6;text-align:right;'>{{inputValue2}}{{item.mycard_position}}</view>
+      <view style='width:378rpx;height:50rpx;line-height:50rpx;position:absolute;bottom:184rpx;left:254rpx;font-size:0.65rem;color:#d4c9a6;text-align:right;'>{{inputValue1}}{{item.mycard_mobile}}</view>
+  </view>
+</template> 

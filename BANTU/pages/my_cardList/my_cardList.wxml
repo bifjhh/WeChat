@@ -1,0 +1,41 @@
+<!--pages/my_cardList/my_cardList.wxml-->
+<!-- <text>pages/my_cardList/my_cardList.wxml</text> -->
+<import src="../../template/bgcard.wxml" /> 
+   <view class='add_card' style='display:{{no_mycard0}}'>
+      <view class='Tishi'>您还没有自己的名片哦</view>
+      <view class='add_button'>
+        <button bindtap='add_card'>添加名片</button>
+      </view>
+    </view>
+<view style='width:100%;padding-top:20rpx;'>
+<view class="template_card" bindtap='detail'  wx:for="{{list}}" data-cardid="{{item.mycard_cardid}}">
+    <template  is="bgcard{{item.mycard_templateid}}" data="{{item}}"></template>
+    <!-- <view class="title">
+         {{item.mycard_companyname}}
+    </view>
+    <view class="card_name">
+        {{item.mycard_name}}
+    </view>
+    <view class="technical">
+        <view>执行董事</view>
+        <view>{{item.mycard_position}}</view>
+    </view>
+    <view class="phone">
+        手  机 : <text>{{item.mycard_mobile}}</text>
+    </view> -->
+</view>
+</view>
+    <view class='add_me_way' style='bottom:{{add_me_way}}rpx' >
+          <navigator url= '../redact/redact?mycard_ismy=1' >
+          <image src='../../image/shou.png' style='width:100rpx;height:100rpx;'></image>
+          <view class='add_me_way_box1' bindtap='add_me_way_box1' style='left:{{add_me_way_box1_left}}rpx'>手动</view>
+          </navigator>
+          <!-- <navigator url= '../camera/camera?mycard_ismy=1'>   -->
+          <view bindtap='saomiao' data-ismy='1'>
+         <image src='../../image/cermear.png' style='width:100rpx;height:100rpx;'></image>
+          <view class='add_me_way_box2' bindtap='add_me_way_box2' style='right:{{add_me_way_box2_right}}rpx'>拍照</view>
+          </view>
+           <!-- </navigator>   -->
+          <view class='close' bindtap='close'><image src='../../image/close.png' style='width:85rpx;height:85rpx;'></image></view>
+        </view>
+        <view class='mask2' bindtap='add_my' style='display:{{add_my}}'></view>

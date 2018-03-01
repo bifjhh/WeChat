@@ -1,0 +1,20 @@
+
+<template name="loading">
+ <view class='wrap_square'>
+  <view class='box_square'>
+    <view class='css-square square1'></view>
+    <view class='css-square square2'></view>
+
+    <view class='css-square square3'></view>
+    
+    <view class='css-square square4'></view>
+    
+    <view class='css-square square5'></view>
+    
+    <view class='css-square square6'></view>
+    <view class='css-square square7'></view>
+    
+  </view>
+</view> 
+
+</template>

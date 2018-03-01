@@ -1,0 +1,28 @@
+<!--pages/details/details.wxml-->
+<import src="../../template/bgcard.wxml" /> 
+<view class="wrap" style="display:{{dshow}}">
+    <view style='width:700rpx;margin:0 auto;'> 
+     <template  is="bgcard{{item.mycard_templateid}}" data="{{item}}"></template>
+    </view>
+    <view class="text">
+        <view class='text_item'  catchtap="phone" data-phone="{{item.mycard_phone}}">
+          电话：<text catchtap="phone" data-phone="{{item.mycard_phone}}">{{item.mycard_phone}}</text>
+        </view>
+        <view class='text_item'>
+          邮箱：<text>{{item.mycard_mail}}</text>
+        </view>
+        <view class='text_item top'>
+          地址：<text>{{item.mycard_add}}</text>
+        </view>
+        <view class='text_item'>
+          网址：<text>{{item.mycard_website}}</text>
+        </view>
+         <view class='text_item_last top '>
+          公司简介：<view>{{item.mycard_profile}}</view>
+        </view> 
+         
+    </view>
+    <button class='set_card' style="display:{{sendShow}}"disabled="{{!sendOff}}" bindtap="sendCard" data-cardid='{{}}'>发送名片</button>
+    <button class='set_card' style="display:{{banShow}};margin-top:30rpx;" disabled="{{true}}">已发送给对方</button>
+    <button class='set_card'style="margin-top:30rpx;" bindtap="set_card" data-cardid='{{item.mycard_cardid}}'>设置名片</button>
+</view>

@@ -1,0 +1,67 @@
+.wrap_square{
+  width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 1%;
+    border-radius: 5px;
+}
+.box_square{
+  position: relative;
+    width: 224rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    margin: 150rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+.css-square{
+   position: absolute;
+    top: 50%;
+    width: 50rpx;
+    height: 14rpx;
+    background-color:rgb(107, 89, 76);
+    box-shadow: 4rpx 4rpx 6rpx 0rpx black;
+}
+
+.square1{
+  left: 140rpx;
+  animation: dominos 1s 0.125s ease infinite;
+}
+
+.square2{
+    left: 120rpx;
+    animation: dominos 1s 0.3s ease infinite;
+}
+.square3{
+    left: 100rpx;
+    animation: dominos 1s 0.425s ease infinite;
+}
+.square4{
+    left: 80rpx;
+    animation: dominos 1s 0.540s ease infinite;
+}
+.square5{
+    left: 60rpx;
+    animation: dominos 1s 0.665s ease infinite;
+}
+.square6{
+    left: 40rpx;
+    animation: dominos 1s 0.79s ease infinite;
+}
+.square7{
+    left: 20rpx;
+    animation: dominos 1s 0.9s ease infinite;
+}
+@keyframes dominos{
+  50% {
+      opacity: 0.7;
+  }
+
+  75% {
+      transform: rotate(90deg);
+  }
+  80% {
+      opacity: 1;
+  }
+}

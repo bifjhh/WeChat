@@ -1,0 +1,27 @@
+/* pages/my_wallet/my_wallet.wxss */
+@import "../../template/bgcard.wxss";
+page{
+  background-color: #f1ece1;
+}
+.item{
+  width: 730rpx;
+  height: 60rpx;
+  background-color: #fff;
+  line-height: 60rpx;
+padding-left: 20rpx;
+font-size: 0.9rem;
+margin-bottom: 20rpx;
+}
+.item>view{
+  float: left;
+}
+.item input{
+  padding-left:20rpx; 
+}
+.num{
+  padding-left: 20rpx;
+}
+.money{
+  width: 113rpx;
+
+}

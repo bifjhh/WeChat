@@ -1,0 +1,28 @@
+<!--pages/details/details.wxml-->
+<import src="../../template/bgcard.wxml" />
+<view class="wrap" style="display:{{dshow}}">
+  <view style='width:710rpx;margin:0 auto;'>
+    <template is="bgcard{{item.mycard_templateid}}" data="{{item}}"></template>
+     <view class="text">
+        <view class='text_item'>
+          电话：<text>{{item.mycard_phone}}</text>
+        </view>
+        <view class='text_item'>
+          邮箱：<text>{{item.mycard_mail}}</text>
+        </view>
+        <view class='text_item normal'>
+          地址：<text>{{item.mycard_add}}</text>
+        </view>
+        <view class='text_item'>
+          网址：<text>{{item.mycard_website}}</text>
+        </view>
+         <view class='text_item_last'>
+          公司简介：<text>{{item.mycard_profile}}</text>
+        </view> 
+    </view>
+    <button wx:if="{{ifshow==0}}" class='set_card' bindtap="addCard" data-cardid='{{item.mycard_cardid}}'>保存名片</button>
+    <button wx:if="{{ifshow==1}}" class='set_card' bindtap="navadd">查看名片详情</button>
+    <!-- <button wx:if="{{ifshow==0}}" class='set_card' >取消保存</button> -->
+  </view>
+  <!-- <view class='but'>设置名片</view> -->
+</view>

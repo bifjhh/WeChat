@@ -1,0 +1,31 @@
+<!--pages/my_wallet/my_wallet.wxml-->
+ <import src="../../template/bgcard.wxml" /> 
+<view class='item'>
+<view class='money'>余额  ￥</view>
+<view class='num'>100</view>
+</view>
+<view class='item'>
+<view class='money'>金额  :</view>
+<input type="number" placeholder="自定义充值" placeholder-class="style" confirm-type="去充值"></input>
+</view>
+
+
+
+<template is="bgcard0"  />
+
+<template is="bgcard1" />
+
+<template is="bgcard2"/>
+
+<template is="bgcard3" />  
+<template is="bgcard4" />  
+<template is="bgcard5" /> 
+
+<!--<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>  -->

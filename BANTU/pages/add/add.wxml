@@ -1,0 +1,36 @@
+ <import src="../../template/bgcard.wxml" /> 
+ <view>
+<view class='index_cards' style="display:{{dshow}}">
+  <view class="wait" bindtap="wait">
+    <text class="wait-info"></text>
+    <text class="wait-num">未接收:{{waitNum}}</text>
+  </view>
+  <view class='add_card' style='display:{{show}}'>
+    <view class='Tishi'>您还没有收到名片哦</view>
+  </view>
+  <view class="index_cards_box" wx:if="{{show=='none'}}">
+    <view bindlongpress="del" wx:for="{{card_list}}" wx:key="{{index}}" data-info="{{item}}" class="index_my_card">
+        <button class="min_r" open-type="share" data-card="{{item.mycard_cardid}}">
+          <image class="min_r_img" src="../../image/card-share.png" />
+        </button>
+    <!--<form bindsubmit="submit" report-submit="true">
+    </form>-->
+      <view class="my_card_body" bindtap="nav_card" data-card="{{item.mycard_cardid}}">
+        <template is="bgcard{{item.mycard_templateid}}" data="{{item}}" />  
+        </view>
+    </view>
+  </view>
+</view>
+  <view class="add" style="display:block">
+    <image src='../../image/add.png' bindtap='add' style="transform: rotate({{rotate}}deg)"></image>
+    <view class='add_item {{saomiao}}  {{op1}}' bindtap='saomiao' data-ismy='0' style='bottom:{{add_bottom0}}rpx;transform: scale({{sc}});'>
+      <image src='../../image/saomiao.png'></image>
+      <view class='about'>扫描</view>
+    </view>
+    <view class='add_item {{manual}}  {{op2}}' bindtap='manual' style='bottom:{{add_bottom2}}rpx;transform: scale({{sc}});'>
+      <image src='../../image/shoudong.png'></image>
+      <view class='about'>手动</view>
+    </view>
+  </view>
+  <view class='mask1' bindtap='add_hide' style='display:{{mask_hide}}' catchtouchmove="move"></view>
+</view>

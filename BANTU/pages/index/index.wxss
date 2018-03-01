@@ -1,0 +1,388 @@
+/**index.wxss**/
+
+@import "../../template/tabBar.wxss";
+@import "../../template/add_transition.wxss";
+@import "../../template/bgcard.wxss";
+@import "../../template/loading.wxss";
+page {
+   overflow-x: hidden;
+  background-color: #f1ece1; 
+}
+.nav_box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60rpx;
+  border-bottom: 1px solid rgb(153, 153, 153);
+  font-size: 30rpx;
+  color: rgb(106, 90, 77);
+  background-color: #fbf7ed;
+  z-index: 1;
+}
+
+.add_nav {
+  text-align: center;
+  background-color: #6b594b;
+}
+
+.nav view {
+  text-align: left;
+}
+
+.nav-me {
+  width: 200rpx;
+  height: 50rpx;
+  float: left;
+  margin-left: 160rpx;
+}
+
+.nav-cards {
+  width: 150rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: 166rpx;
+}
+
+.slider {
+  position: absolute;
+  height: 5rpx;
+  background-color: rgb(107, 89, 76);
+  top: 28px;
+  transition: all 0.2s;
+}
+
+.index_card {
+  position: relative;
+  width: 100%;
+  /* height: 1048rpx; */
+  background-color: #f2ebe1;
+  z-index: 1;
+}
+
+.add_card {
+  position: absolute;
+  top: 239rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Tishi {
+  font-size: 0.96rem;
+  color: #57534b;
+  text-align: center;
+}
+
+.add_button button {
+  width: 250rpx;
+  margin-top: 53rpx;
+  background-color: #6b5a4d;
+  color: #fffef2;
+}
+
+.mask1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1;
+}
+.mask2{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+   top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 0;
+}
+.my_card {
+  width: 100%;
+}
+
+.my_card_box {
+  width:700rpx;
+padding-top:20rpx;
+position:relative;
+margin:0 auto;
+
+}
+
+.my_card_box>image {
+  width: 100%;
+  height: 365rpx;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 33rpx;
+
+  /* margin-top: 20rpx; */
+}
+
+.img_box {
+  width: 105rpx;
+  height: 105rpx;
+  /* background-color: #fff; */
+  /* border-radius: 50%; */
+  text-align: center;
+}
+
+.img_box>image {
+  margin-top: 24rpx;
+}
+
+.foot_text {
+  margin-top: 30rpx;
+  width: 104rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  color: #6b594c;
+  font-size: 28rpx;
+}
+
+/* .template_img {
+  width: 100%;
+  padding-top: 20rpx;
+  width: 700rpx;
+  height: 340rpx;
+  background-image: url("https://www.fmlcfs.top/BT/bg_img/template_bg.png");
+  background-position: center;
+  background-size: 700rpx 340rpx;
+  background-repeat: no-repeat;
+  position: relative;
+} */
+.add_me_way{
+width:390rpx;
+height:300rpx;
+
+
+/* border:1px solid #ccc; */
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 100rpx;
+background-color:#fff;
+position:fixed;
+left:50%;
+transform: translateX(-50%);
+z-index:1;
+color: #010101;
+border-radius: 15rpx;
+font-size: 0.85rem;
+transition:all 0.2s cubic-bezier(0.61, 0.63, 0.25, 1) 0.13s;
+}
+.add_me_way_box1{
+width: 150rpx;
+text-align: center;
+background-color: #fff;
+
+
+}
+.add_me_way_box2{
+width: 150rpx;
+text-align: center;
+background-color: #fff;
+
+
+}
+.close{
+  position: absolute;
+  top:2rpx;
+  right:12rpx;
+
+}
+.title {
+  width: 100%;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 6rpx;
+  color: #fff;
+}
+
+.card_name {
+  letter-spacing: 6rpx;
+  width: 162rpx;
+  height: 80rpx;
+  text-align: left;
+  color: #000;
+  font-size: 1.28rem;
+  position: absolute;
+  left: 50rpx;
+  top: 116rpx;
+}
+
+.technical {
+  width: 230rpx;
+  height: 106rpx;
+  position: absolute;
+  right: 228rpx;
+  top: 114rpx;
+  font-size: 0.7rem;
+  color: #000;
+}
+
+.phone {
+  width: 340rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: absolute;
+  bottom: 68rpx;
+  left: 62rpx;
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.phone text {
+  letter-spacing: 5rpx;
+}
+
+.back_img {
+ width:660rpx;
+padding-bottom:30rpx;
+
+  position: relative;
+  left: 0;
+  transition: all ease-in-out 0.5s;
+  background-color: #fbf7ee;
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+  margin-bottom:170rpx;
+
+}
+
+.text_back_img {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #221e15;
+  font-size: 0.7rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+.text_back_img_last{
+  width: 100%;
+  line-height: 60rpx;
+  color: #221e15;
+  font-size: 0.7rem;
+  font-weight: 700;
+    overflow: hidden;
+}
+.back_img_about {
+  overflow: hidden;
+}
+.square {
+  width: 35rpx;
+  height: 35rpx;
+  background-color: #1b7ec2;
+  float: left;
+}
+
+.back_img_about_title {
+font-weight:700;
+font-size:1rem;
+line-height:70rpx;
+}
+
+.back_img_about_text {
+  text-indent: 2em;
+  font-size: 0.8rem;
+  padding-right: 20rpx;
+}
+
+.load {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.friend {
+  position: relative;
+}
+
+.img_box_but {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 105rpx;
+  height: 145rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0)
+}
+
+.img_box_but::after {
+  border: none;
+}
+.load_box{
+  width: 100%;
+  height: 100%;
+  background-color: #b7b7b2;
+  position: fixed;
+  top: 0rpx;
+  z-index: 10;
+  padding-top: 220rpx;
+}
+
+.load1{
+  width: 170rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.load1>view{
+  margin-top:16rpx;
+  width: 380rpx;
+  font-size: 0.8rem;
+  color: #fffffd;
+  margin-left:-98rpx;
+}
+.load1>button{
+  background-color:#6b594b;
+  margin-top: 30rpx;
+  font-size: 0.9rem;
+  color: #fffffd;
+  padding: 0;
+}
+button {
+  padding: 0;
+}
+.add_me_way>view{
+  text-align: center;
+}
+.add_me_way>navigator{
+  text-align: center;
+}
+.preimg{
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .6);
+}
+.preimg image{
+  width: 500rpx;
+  height: 500rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

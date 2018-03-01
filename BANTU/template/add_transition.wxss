@@ -1,0 +1,74 @@
+.box{
+  background-color: #f2ebe1;
+  position: relative;
+ /* margin-top: 62rpx; */
+}
+.item_box{
+  position: relative;
+}
+.add{
+  position:fixed;
+  bottom:11px;
+  right:20px;
+z-index: 3
+}
+.add >image{
+  width:90rpx;
+height:90rpx;
+
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0,0, 0.1);
+  transition: all 0.2s;
+  position: relative;
+  z-index: 10;
+}
+.add_item{
+ text-align: center;
+ right:50px;
+ position:absolute;
+ right:12rpx;
+  z-index: 5;
+  bottom:0rpx;
+
+} 
+.add_item image{
+ width:70rpx;
+height:70rpx;
+
+}
+ .ewm{
+  transition:all 0.2s cubic-bezier(0.61, 0.63, 0.25, 1)  0.13s;
+}
+ .saomiao{
+  transition:all 0.4s linear 0s;
+  opacity: 0;
+}
+.manual{
+  
+  transition:all 0.6s linear 0s;
+  opacity: 0;
+ 
+}  
+ .op1{
+    opacity: 1
+}
+.op2{
+  opacity: 1
+} 
+.about{
+  font-size:0.7rem;
+color:rgb(107, 89, 76);
+width:50px;
+height:26px;
+line-height:25px;
+text-align:right;
+position:absolute;
+left:-60px;
+top:0px;
+margin-top:7rpx;
+transition:all 1s;
+background-color:#fff;
+text-align:center;
+border-radius:5px;
+
+}

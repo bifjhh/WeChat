@@ -1,0 +1,40 @@
+<import src="../../template/bgcard.wxml" />
+<view class='index_cards' style="display:{{dshow}}">
+  <view class='add_card' style='display:{{show}}'>
+    <view class='Tishi'>您还没有收到名片哦</view>
+  </view>
+  <scroll-view class="content" scroll-into-view="{{toView}}" scroll-y="{{true}}" scroll-with-animation="true">
+    <view bindlongpress="del" wx:for="{{act_addList}}" wx:key="{{index}}"  class="index_my_card">
+      <view class="address_top " id="{{ 'inToView'+item.id}}">
+        {{item.letter}}
+      </view>  
+      <view wx:for="{{item.arrInfo}}" wx:key="{{index}}">
+        <button class='min_r' form-type="submit" open-type="share" data-card="{{item.mycard_cardid}}">
+          <image class='min_r_img' src="../../image/card-share.png" />
+        </button>
+        <view class='my_card_body' bindtap="nav_card" data-card="{{item.mycard_cardid}}">
+          <template is="bgcard{{item.mycard_templateid}}" data="{{item}}" />
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="orientation_region" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    <view class="orientation">自动定位</view>
+    <block wx:for="{{orientationList}}">
+      <view class="orientation_city" bindtap="scrollToViewFn" data-id="{{item.id}}">{{item.letter}}</view>
+    </block>
+  </view>
+  
+</view>
+<view class="add" style="display:block">
+  <image src='../../image/add.png' bindtap='add' style="transform: rotate({{rotate}}deg)"></image>
+  <view class='add_item {{saomiao}}' bindtap='saomiao' data-ismy='0' style='bottom:{{add_bottom0}}rpx;opacity:{{opacity}}'>
+    <image src='../../image/saomiao.png'></image>
+    <view class='about'>扫描</view>
+  </view>
+  <view class='add_item {{manual}}' bindtap='manual' style='bottom:{{add_bottom2}}rpx;opacity:{{opacity}}'>
+    <image src='../../image/shoudong.png'></image>
+    <view class='about'>手动</view>
+  </view>
+</view>
+<view class='mask1' bindtap='add_hide' style='display:{{mask_hide}}'></view>

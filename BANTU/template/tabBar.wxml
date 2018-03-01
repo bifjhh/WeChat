@@ -1,0 +1,18 @@
+<!--底部tabBar -->
+<template name="tabBar">
+<view class='tabBar'>
+ <navigator class='item' bindtap='card' open-type="redirect" hover-stay-time="200" hover-class="navigator-hover" url='/pages/index/index'>
+    <view >
+      <image src='../../image/{{cardssrc}}' style='width:50rpx;height:44rpx;'></image>
+    </view>
+  </navigator>  
+    <view class='item add'>
+      <image src='../../image/add.png' style='transform:  rotate({{rotate}}deg)' bindtap='add'></image>    
+    </view>
+    <navigator url='/pages/me/me' open-type="redirect" class='item' bindtap='me' hover-stay-time="200" hover-class="navigator-hover" >
+    <view >
+      <image src='../../image/{{mesrc}}' style='width:38rpx;height:44rpx;'></image>
+    </view>
+    </navigator>
+  </view> 
+</template>

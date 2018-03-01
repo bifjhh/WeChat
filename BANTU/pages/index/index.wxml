@@ -1,0 +1,143 @@
+<!--index.wxml-->
+<!-- <import src="tabBar.wxml" /> -->
+ <import src="../../template/bgcard.wxml" /> 
+ <import src="../../template/loading.wxml" />
+ <view style='display:{{max_box}}' > 
+<view class='box' bindtouchstart='move_start' bindtouchend='move_end' bindtap='add_hidden'>
+  <!--导航  -->
+  <!--我的名片层  -->
+  <view class='index_card' style='display:{{show}}'>
+     <!-- <view class='wrap_square'style='display:{{load_hide}}' >
+  <view class='box_square'>
+    <view class='css-square square1'></view>
+    <view class='css-square square2'></view>
+
+    <view class='css-square square3'></view>
+    
+    <view class='css-square square4'></view>
+    
+    <view class='css-square square5'></view>
+    
+    <view class='css-square square6'></view>
+    <view class='css-square square7'></view>
+    
+  </view>
+</view>  -->
+    <!--没有自己的名片出现的消息  -->
+    <view class='add_card' style='display:{{no_mycard0}}'>
+      <view class='Tishi'>您还没有自己的名片哦</view>
+      <view class='add_button'>
+        <button bindtap='add_card'>添加名片</button>
+      </view>
+    </view>
+    <!--有自己的名片是显示自己的名片  -->
+    <view class='my_card' style="display:{{no_mycard1}}">
+      <view class='my_card_box' wx:for="{{list}}" wx:key="index" data-cardid="{{item.mycard_cardid}}">
+         <view class="template_img" bindtap='back_img' style='z-index:2;position:relative'> 
+          <template  is="bgcard{{item.mycard_templateid}}" data="{{item}}"></template>
+         </view> 
+         
+        <view class='back_img' style='top:{{transY}}rpx;opacity:{{opacity_back}}'>
+          <view class='text_back_img'>
+            <text>电话：</text>
+            <text>{{item.mycard_phone}}</text>
+          </view>
+          <view class='text_back_img'>
+            <text>邮箱：</text>
+            <text>{{item.mycard_mail}}</text>
+          </view>
+          <view class='text_back_img'>
+            <text>地址：</text>
+            <text>{{item.mycard_add}}</text>
+          </view>
+          <view class='text_back_img'>
+            <text>网址：</text>
+            <text>{{item.mycard_website}}</text>
+          </view>
+          <view class='text_back_img_last'>
+            <!-- <view style='overflow:hidden'> -->
+              <view class='back_img_about_title'>公司简介:</view>
+            <!-- </view> -->
+            <view class='back_img_about_text'>{{item.mycard_profile}}</view>
+          </view>
+       
+       
+       
+       
+       
+       
+        </view>
+         <view style='width:700rpx;height:1rpx;background-color:#f1ece1;'></view> 
+      </view>
+      <view class="foot" >
+        <view class="mpm" bindtap='card_code' data-temp="{{list[0].mycard_templateid}}">
+          <view class="img_box">
+            <image src="../../image/icon-mpm.png" style="width:100rpx;height:100rpx;" />
+          </view>
+          <view class="foot_text">
+            名片码
+          </view>
+        </view>
+        <view style="width:200rpx;height:10rpx;"></view>
+        <view class="friend" bindtap="send_firend">
+           <button open-type="share" class="img_box_but" data-cardid="{{list[0].mycard_cardid}}">
+           </button>
+          <view class="img_box" data-cardid="{{item.mycard_cardid}}">
+            <image src="../../image/icon-share.png" style="width:100rpx;height:100rpx;" />
+          </view>
+          <view class="foot_text" >
+            发朋友
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+    <view class='add_me_way' style='bottom:{{add_me_way}}rpx' >
+          <navigator url= '../redact/redact?mycard_ismy=1' >
+          <image src='../../image/shou.png' style='width:100rpx;height:100rpx;'></image>
+          <view class='add_me_way_box1' bindtap='add_me_way_box1' style='left:{{add_me_way_box1_left}}rpx'>手动</view>
+          </navigator>
+          <!-- <navigator url= '../camera/camera?mycard_ismy=1'>   -->
+          <view bindtap='saomiao' data-ismy='1'>
+         <image src='../../image/cermear.png' style='width:100rpx;height:100rpx;'></image>
+          <view class='add_me_way_box2' bindtap='add_me_way_box2' style='right:{{add_me_way_box2_right}}rpx'>拍照</view>
+          </view>
+           <!-- </navigator>   -->
+          <view class='close' bindtap='close'><image src='../../image/close.png' style='width:85rpx;height:85rpx;'></image></view>
+        </view>
+<!--遮罩层  -->
+<view class='mask1' bindtap='add_hide' style='display:{{mask_hide}}'></view>
+  <!--点击加号的弹出层  -->
+  <view class="add" style="display:none">
+    <image src='../../image/add.png' bindtap='add' style="transform: rotate({{rotate}}deg);" ></image>
+    <view class='add_item {{saomiao}} {{op1}}' bindtap='saomiao' data-ismy="0" style='bottom:{{add_bottom0}}rpx;transform: scale({{sc}});'>
+      <image src='../../image/saomiao.png'></image>
+      <view class='about'>扫描</view>
+    </view>
+    <!-- <view class='add_item ewm' bindtap='ewm' style='bottom:{{add_bottom1}}px;opacity:{{opacity}};'>
+      <image src='../../image/erweima.png'></image>
+      <view class='about'>二维码</view>
+    </view> -->
+    <view class='add_item {{manual}} {{op2}}' bindtap='manual' style='bottom:{{add_bottom2}}rpx;transform: scale({{sc}});'>
+      <image src='../../image/shoudong.png'></image>
+      <view class='about'>手动</view>
+    </view>
+  </view>
+<view class='mask2' bindtap='add_my' style='display:{{add_my}}'></view>
+<view  class='load_box' style='display:{{load_box}}'>
+  <view class='load1'>
+    <image src='../../image/reqchao.png' style='width:130rpx;height:130rpx;'></image>
+    <view>网络异常</view>
+    <button bindtap='refresh_again'>再次刷新</button>
+  </view>
+</view>
+</view>
+<view class='preimg' style='display:{{preimg}}' bindtap='preimg' catchtouchmove="preventD">
+  <image src="{{code_img}}"></image>
+</view>
+<!--tabBar  -->
+
+<!-- <template is="tabBar"/>  -->

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "名片夹",
+    "backgroundColor": "#f1ece1",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "drag"
+}

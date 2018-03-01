@@ -1,0 +1,14 @@
+<scroll-view class="content" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true">
+    <view wx:for="{{act_addList}}">
+        <view class="address_top" id="{{ 'inToView'+item.id}}">{{item.region}}</view>
+        <view wx:for="{{item.city}}">
+            <view class="address_bottom">{{item.name}}</view>
+        </view>
+    </view>
+</scroll-view>
+<view class="orientation_region" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    <view class="orientation">自动定位</view>
+    <block wx:for="{{orientationList}}">
+        <view class="orientation_city" bindtap="scrollToViewFn" data-id="{{item.id}}">{{item.region}}</view>
+    </block>
+</view>

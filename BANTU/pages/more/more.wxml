@@ -1,0 +1,56 @@
+<!--pages/more/more.wxml-->
+<view class="wrap">
+<view class="template">
+    
+    <form bindsubmit="formSubmit" bindreset="">
+    <view class="form_item">
+        <view class="text">
+            电话
+        </view>
+        <view class="input">
+            <input type="text" placeholder="请输入电话" cursor-spacing="100" value='{{mycard_phone}}' name="mycard_phone"  placeholder-class="place" maxlength="20"/>
+        </view>
+    </view>
+    <view class="form_item">
+        <view class="text">
+            邮箱
+        </view>
+        <view class="input">
+            <input type="text" placeholder="请输入邮箱" name="mycard_mail" cursor-spacing="100" value='{{mycard_mail}}' placeholder-class="place" maxlength="30" />
+        </view>
+    </view>
+  
+    <view class="form_item">
+        <view class="text">
+            网址
+        </view>
+        <view class="input">
+            <input type="text"  placeholder="请输入网址" cursor-spacing="100" value='{{mycard_website}}' name="mycard_website"  placeholder-class="place" maxlength="30"/>
+        </view>
+    </view>
+      <view class="form_item">
+        <view class="text">
+            地址
+        </view>
+        <view class="input">
+            <input type="text"  placeholder="请输入地址" value='{{mycard_add}}' cursor-spacing="100" name="mycard_add" placeholder-class="place" maxlength="50"/>
+        </view>
+    </view>
+     <view class="form_item">
+        <view class="text">
+            公司简介
+        </view>
+        <view class="input big_input">
+            <textarea id="" cols="30" rows="10" show-confirm-bar='{{false}}' placeholder="请输入简介" cursor-spacing="100" value='{{mycard_profile}}' name="mycard_profile"  placeholder-class="place" style='font-size:0.74rem;' maxlength="500"></textarea>
+        </view>
+    </view> 
+    <input type='text' name="mycard_uid" value='{{mycard_uid}}' style='display:none'></input>
+    <input type='text' name="mycard_ismy" value='{{mycard_ismy}}' style='display:none'></input>
+    <input type='text' name="mycard_cardid" value='{{mycard_cardid}}' style='display:none'></input>
+    <button class="but"  formType="submit" disabled='{{disable}}'>
+         <!-- {{text}} 确定<text style='display:{{timer}}'>({{num}})</text>  -->{{num}}
+
+    </button>
+    </form>
+    </view>
+</view>

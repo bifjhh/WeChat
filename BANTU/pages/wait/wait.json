@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "未接收",
+    "backgroundColor": "#f1ece1",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "drag"
+}

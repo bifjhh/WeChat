@@ -1,0 +1,173 @@
+@import "../../template/add_transition.wxss";
+page {
+    background-color: #f1ece1;
+}
+
+
+/* 提示页面 */
+
+.add_card {
+    margin-top: 300rpx;
+}
+
+.Tishi {
+    font-size: 0.96rem;
+    color: #57534b;
+    text-align: center;
+}
+
+.add_button {
+    margin-top: 20rpx;
+}
+
+.button {
+    color: #fff;
+    background-color: #6b594b;
+}
+
+.close {
+    position: absolute;
+    top: 2rpx;
+    right: 12rpx;
+}
+
+
+/* 名片夹列表 */
+
+.index_cards {
+    width: 100%;
+    padding-top: 20rpx;
+}
+
+.index_cards_box {
+    width: 700rpx;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.index_cards_box .index_my_card {
+    box-sizing: border-box;
+    width: 700rpx;
+    margin: 0 auto;
+    margin-bottom: 20rpx;
+    position: relative;
+    /* position: absolute; */
+}
+
+
+.min_l {
+    display: flex;
+    justify-content: left;
+    float: left;
+}
+
+.min_l image {
+    width: 31rpx;
+    height: 33rpx;
+    margin-top: 8.5rpx;
+}
+
+.min_l text {
+    color: #fff;
+    font-size: 26rpx;
+    line-height: 48rpx;
+    margin-left: 10rpx;
+}
+
+.min_r {
+    width: 90rpx;
+    height: 60rpx;
+    text-align: center;
+    background-color: #f3f1ed;
+    padding: 0;
+    position: absolute;
+    bottom: 30rpx;
+    right: 15rpx;
+    z-index: 2;
+    line-height: 60rpx;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+}
+
+.min_r::after {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.index_cards_box .my_card_body {
+    /* margin-top: 6rpx; */
+    width: 700rpx;
+    position: relative;
+    /* background: url('http://bantu.com/template_2.png') no-repeat center; */
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.my_card_body .title {
+    /* height: 48rpx; */
+    width: 700rpx;
+    line-height: 62rpx;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 8rpx;
+    color: #000;
+}
+
+.my_card_body>view {
+    position: absolute;
+}
+
+.my_card_body .card_name {
+    letter-spacing: 6rpx;
+    width: 162rpx;
+    height: 80rpx;
+    text-align: left;
+    color: #000;
+    font-size: 1.28rem;
+    left: 50rpx;
+    top: 126rpx;
+}
+
+.my_card_body .technical {
+    width: 230rpx;
+    height: 106rpx;
+    right: 228rpx;
+    top: 124rpx;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+.my_card_body .phone {
+    width: 340rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    bottom: 68rpx;
+    left: 62rpx;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.my_card_body .phone text {
+    letter-spacing: 5rpx;
+}
+
+.my_card_body .text {
+    width: 100%；;
+}
+
+.mask1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+/* 名片夹层 */

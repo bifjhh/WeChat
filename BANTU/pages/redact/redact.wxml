@@ -1,0 +1,102 @@
+<!--pages/redact/redact.wxml-->
+ <import src="../../template/bgcard.wxml" /> 
+<view class="wrap" style="display:{{dshow}}">
+    <!--首页模板选择 -->
+    <!-- <view class="template magin_b"> -->
+        <!-- <view class="template_card">
+            <view class="title">
+                {{inputValue3}}
+            </view>
+            <view class="card_name">
+                {{inputValue0}}
+            </view>
+            <view class="technical">
+                <view>执行董事</view>
+                <view>{{inputValue1}}</view>
+            </view>
+            <view class="phone">
+                手  机 : <text>{{inputValue2}}</text>
+            </view>
+        </view>
+        <view class="icon-arrow arrow_right">
+            <image src="../../image/icon-right.png" style="width:30rpx;height:60rpx;"  />
+        </view>
+         <view class="icon-arrow arrow_left">
+            <image src="../../image/icon-left.png" style="width:30rpx;height:60rpx;" />
+        </view> -->
+        <view wx:if="{{mycard_ismy==0}}" style='width:700rpx;margin:0 auto;position:relative;'>
+         <template is="bgcard0" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>
+        
+        </view>
+        <view wx:elif="{{mycard_ismy==1}}" style='width:700rpx;margin:0 auto;position:relative;'>
+        <swiper bindchange="change" autoplay='{{auto}}' interval="{{interval}}" duration="100">
+        
+        <swiper-item>
+          <template is="bgcard0" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>
+          </swiper-item>
+            <swiper-item>
+          <template is="bgcard1" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>  
+          </swiper-item>
+          <swiper-item>
+          <template is="bgcard2" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>
+          </swiper-item>
+            <swiper-item>
+          <template is="bgcard3" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>
+          </swiper-item>
+          <swiper-item>
+          <template is="bgcard4" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>
+          </swiper-item>
+          <swiper-item>
+          <template is="bgcard5" data="{{mycard_companyname:mycard_companyname,mycard_name:mycard_name,mycard_position:mycard_position,mycard_mobile:mycard_mobile,inputValue0:inputValue0,inputValue1:inputValue1,inputValue2:inputValue2,inputValue3:inputValue3}}"/>  
+          </swiper-item>
+          </swiper>
+          <view class='paging'>
+           <text>{{now_page}}</text>/<text>{{all_page}}</text>
+           </view>
+          </view>
+    <!-- </view> -->
+    <!-- 表单-->
+    <view class="template">
+        <form bindsubmit="formSubmit" bindreset="">
+            <view class="form_item">
+                <view class="text">
+                    姓名
+                </view>
+                <view class="input">
+                    <input type="text" placeholder="请输入姓名"  cursor-spacing="100"  name="mycard_name"  placeholder-class="place" maxlength="8" bindinput="bindKeyInput0" value='{{mycard_name}}{{inputValue0}}'/>
+                </view>
+            </view>
+           <view class="form_item">
+                <view class="text">
+                    职位
+                </view>
+                <view class="input">
+                    <input type="text" cursor-spacing="100" placeholder="请输入职位" name="mycard_position"  placeholder-class="place" maxlength="20"  bindinput="bindKeyInput1" value='{{mycard_position}}{{inputValue1}}'/>
+                </view>
+            </view>
+            <view class="form_item">
+                <view class="text">
+                    手机
+                </view>
+                <view class="input">
+                    <input type="number" cursor-spacing="100" bindblur="phone" placeholder="请输入手机" name="mycard_mobile"  placeholder-class="place" maxlength="11" bindinput="bindKeyInput2" value='{{mycard_mobile}}{{inputValue2}}'/>
+                </view>
+            </view>
+            <view class="form_item">
+                <view class="text">
+                    公司名称
+                </view>
+                <view class="input">
+                    <input type="text" cursor-spacing="100" placeholder="请输入公司名称" placeholder-class="place" name="mycard_companyname" maxlength="40" bindinput="bindKeyInput3" value='{{mycard_companyname}}{{inputValue3}}'/>
+                </view>
+            </view>
+            <input type='hidden' name="mycard_ismy" value='{{mycard_ismy}}' style='display:none'/>          
+            <input type='text' name="mycard_uid" value="{{userid}}" style='display:none'></input>
+            <input type='text' name="mycard_cardid" value='{{mycard_cardid}}' style='display:none'></input>
+            <button class="but"  bindtap="next" disabled='{{disable}}' formType="submit" >
+                下一步
+            </button>
+            
+        </form>
+    </view>
+</view>

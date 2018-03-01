@@ -1,0 +1,2 @@
+/* pages/more/more.wxss */
+@import "../redact/redact.wxss"

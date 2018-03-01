@@ -1,0 +1,59 @@
+<!--pages/me/me.wxml-->
+<view class='box' bindtouchstart='move_start' bindtouchend='move_end' bindtap='add_hidden'>
+<!--我的图像  -->
+  <view class='cover'>
+    <image src='{{avatarUrl}}'></image>
+    <view class='user_name'>{{nickName}}</view>
+  </view>
+  <!--列表  -->
+  <view class='wrap_me'>
+    <view class='me_item shadow'>
+     <navigator url='../my_cardList/my_cardList' hover-class="nav" hover-stay-time="100">
+      <image src='../../image/mee.png' class='left_icon' ></image>
+      <button class='me_item_content' hover-class="btn-hover">我的名片</button>
+      <image src='../../image/more.png' class='more'></image>
+      </navigator>
+    </view>
+    <!-- <view class='me_item shadow'>
+     <navigator url='../my_wallet/my_wallet'>
+      <image src='../../image/mee.png' class='left_icon' ></image>
+      <view class='me_item_content'><text>我的钱包</text></view>
+      <image src='../../image/more.png' class='more'></image>
+      </navigator>
+    </view> -->
+    <view class='me_item transpond' style='border-bottom:1px solid rgb(241,236,225);' >
+        <navigator  hover-class="nav" hover-stay-time="100">
+      <image src='../../image/service.png' class='left_icon' ></image>
+      <button class='me_item_content' hover-class="btn-hover"  open-type="contact">联系客服</button>
+      <image src='../../image/more.png' class='more'></image>
+      </navigator>
+    </view>
+    <view class='me_item shadow'>
+      <navigator url='/pages/couple/couple'  hover-class="nav" hover-stay-time="100">
+      <image src='../../image/msg.png' class='left_icon' ></image>
+      <button class='me_item_content' hover-class="btn-hover">反馈问题</button>
+      <image src='../../image/more.png' class='more'></image>
+      </navigator>
+    </view>
+    <view class='me_item transpond shadow'>
+    <navigator  hover-class="nav" hover-stay-time="100">
+      <image src='../../image/transpond.png' class='left_icon' ></image>
+      <button class='me_item_content'hover-class="btn-hover" open-type="share">分享版图</button>
+      <image src='../../image/more.png' class='more'></image>
+      </navigator>
+    </view>
+  </view>
+   <!--点击加号的弹出层  -->
+  <!-- <view  class='add_item {{saomiao}}' style=' display:{{conceal}};position:absolute;bottom:{{add_bottom}}px;left:156rpx'>
+    <image src='../../image/saomiao.png'></image>
+    <view class='about'>扫描</view>
+  </view>
+   <view  class='add_item ewm' style='display:{{conceal}};position:absolute;bottom:{{add_bottom}}px;left:326rpx'>
+    <image src='../../image/erweima.png'></image>
+     <view class='about'>二维码</view>
+  </view>
+  <view  class='add_item {{manual}}' style='display:{{conceal}}; position: absolute;bottom:{{add_bottom}}px;right:156rpx'>
+    <image src='../../image/shoudong.png'></image>
+     <view class='about'>手动</view>
+  </view> -->
+</view>

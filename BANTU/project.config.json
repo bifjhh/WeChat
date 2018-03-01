@@ -1,0 +1,123 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.2",
+	"appid": "wxc7e6e91df796cd7f",
+	"projectname": "BANTU",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的页面",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "反馈页面",
+					"pathName": "pages/couple/couple",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "编辑名片页面",
+					"pathName": "pages/redact/redact",
+					"query": "mycard_ismy=0&mycard_cardid=704ADD457C4FF444BEDB6EB2288E2B5F&mycard_templateid=&item=undefined"
+				},
+				{
+					"id": -1,
+					"name": "名片夹详情页面",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "名片列表页面",
+					"pathName": "pages/add/add",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "更多",
+					"pathName": "pages/more/more",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "拍照",
+					"pathName": "pages/camera/camera",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "cdls",
+					"pathName": "pages/card_Dls/card_Dls",
+					"query": "userId=b3f86abf14994431&cardid=F7BF4F9E07300C0451BB71B82D3304B4"
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/my_wallet/my_wallet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "名片夹列表",
+					"pathName": "pages/add/add",
+					"query": "userId=508f7ba597d147b2&cardid=593B886689DD2CA817D3C24D9AD60BC8"
+				},
+				{
+					"id": -1,
+					"name": "form",
+					"pathName": "pages/formid/formid",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "锚点定位",
+					"pathName": "pages/into/into",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test锚点",
+					"pathName": "pages/into2/into2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "组件",
+					"pathName": "pages/view/view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wait",
+					"pathName": "pages/wait/wait",
+					"query": ""
+				}
+			]
+		}
+	}
+}

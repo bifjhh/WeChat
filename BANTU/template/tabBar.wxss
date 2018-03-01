@@ -1,0 +1,44 @@
+.tabBar{
+  width: 100%;
+  height: 98rpx;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #fff;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  width: 33.333%;
+  height: 98rpx;
+  /* float: left; */
+  padding-top: 8rpx;
+  box-sizing: border-box;
+  line-height: 98rpx;
+  text-align: center;
+   /* margin-top: 8rpx;  */
+}
+.item>image{
+  width: 25rpx;  
+  height: 22rpx;
+}
+.tabBar .add{
+  /* width: 420rpx; */
+  height: 98rpx;
+  text-align: center;
+  position: relative;
+}
+.tabBar .add image{
+  width: 80rpx;
+  height: 80rpx;
+  /* transform:  rotate(135deg) */
+  transition: all 0.5s;
+}
+.navigator-hover {
+ background-color: #e7e4e2;
+}
+.tabBar navigator{
+  position: relative;
+  z-index:0;
+}

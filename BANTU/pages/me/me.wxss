@@ -1,0 +1,93 @@
+/* pages/me/me.wxss */
+@import "../../template/tabBar.wxss";
+@import "../../template/add_transition.wxss";
+page{
+  background-color:#f1ece1;
+}
+.cover{
+  width: 100%;
+  height: 210rpx;
+  text-align: center;
+  padding-top:42rpx; 
+  /* margin-top:42rpx;  */
+}
+.cover image{
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+}
+.user_name{
+  color: rgb(106,89,75);
+  /* margin-top: 20rpx; */
+  font-size: 0.74rem;
+}
+.me_item{
+  /* width: 100%; */
+  height: 110rpx;
+  background-color: #fff;
+  line-height: 110rpx;
+  position: relative;
+  
+  /* vertical-align: middle; */
+}
+/* .me_item navigator{
+  overflow: hidden;
+} */
+.me_item_content{
+font-size:0.9rem;
+color:rgb(51,51,51);
+float:left;
+width:78%;
+
+}
+.left_icon{
+  width:50rpx ;
+  height:50rpx;
+  /* position: absolute; */
+  float: left;
+  margin-top: 30rpx;
+  margin-left: 39rpx;
+  margin-right: 24rpx;
+  /* left: 39rpx;
+  top: 30rpx; */
+}
+.more{
+  width:20rpx;
+height:20rpx; 
+  float:right;
+  /* position: absolute */
+  margin-right:  26rpx;
+  margin-top: 44rpx; 
+}
+.transpond{
+  margin-top: 20rpx;
+  
+}
+.shadow{
+  box-shadow: 3px 1px  1px 1px #e0dcd3;
+}
+button{
+  padding :0;
+  box-sizing: content-box;
+  text-align: left;
+  background-color:transparent;
+  line-height:108rpx;
+
+}
+button::after{
+  border-color: transparent; 
+}
+.btn-hover{
+  background-color: transparent;
+  border-color: transparent; 
+  border: 1rpx solid transparent;
+}
+navigator {
+height:110rpx;
+width:750rpx;
+display:block;
+}
+
+.nav{
+  background-color: #ddd;
+}

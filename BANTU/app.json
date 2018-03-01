@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/couple/couple",
+    "pages/redact/redact",
+    "pages/details/details",
+    "pages/more/more",
+    "pages/my_cardList/my_cardList",
+    "pages/card_Dls/card_Dls",
+    "pages/my_wallet/my_wallet",
+    "pages/formid/formid",
+    "pages/into/into",
+    "pages/into2/into2",
+    "pages/wait/wait",
+    "pages/waitSet/waitSet",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fbf7ed",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "rgb(241,236,225)"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFF",
+    "selectedColor": "#6b5a4d",
+    "color": "#c1b4a7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/carder.png",
+        "selectedIconPath": "/image/carder_select.png",
+        "text":"名片"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "/image/cards.png",
+        "selectedIconPath": "/image/cards_select.png",
+        "text": "名片夹"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "/image/me.png",
+        "selectedIconPath": "/image/me_select.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+/* .bg_card1{
+  width: 750rpx;
+  height: 430rpx;
+  background-image: url(https://www.fmlcfs.top/BT/bgimg/bg/bgcard1.jpg);
+  background-position: center;
+  background-size: 750rpx 430rpx;
+  position: relative;
+}
+.title1{
+  width:550rpx;
+  height:50rpx;
+  line-height:50rpx;
+  position:absolute;
+  right:27rpx;
+  top:90rpx;
+  letter-spacing:5rpx;
+  font-size:1rem;
+  margin-left:20rpx;
+  overflow:hidden;
+}
+.bgname1{
+  width:100%;
+  height:50rpx;
+  line-height:50rpx;
+  position:absolute;
+  top:160rpx;
+  font-size:0.8rem;
+  padding-left:60rpx;
+
+}
+.name2{
+  font-weight: 700;
+  margin-right: 10rpx;
+}
+.phone1{
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  position: absolute;
+  top: 220rpx;
+  font-size: 0.7rem;
+} */
+/*第二张名片  */
+.bg_card2{
+   width: 750rpx;
+  height: 430rpx;
+  background-image: url(https://www.fmlcfs.top/BT/bgimg/bg/bgcard2.jpg);
+  background-position: center;
+  background-size: 750rpx 430rpx;
+  color: #e43c2c;
+  position: relative;
+}
+.title2{
+  width:100%;
+  height: 70rpx;
+  line-height: 70rpx; 
+  font-size: 1.1rem;
+  padding-top:50rpx ;
+  padding-right: 20rpx;
+  text-align: center;
+}
+.name2{
+  padding-left: 148rpx;
+  margin-top: 38rpx;
+  margin-bottom: 5rpx;
+  font-size: 1rem;
+}
+.position2{
+  padding-left: 148rpx;
+    font-size: 0.9rem;
+}
+.foot2{
+  /* padding-left:177rpx; */
+  font-size: 0.7rem;
+  position: absolute;
+ bottom:15rpx;
+left:180rpx;
+
+
+}
+.foot2 view{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+/*第三张模板  */
+.bg_card3{
+   width: 750rpx;
+  height: 430rpx;
+  background-image: url(https://www.fmlcfs.top/BT/bg_img/template6bg.jpg);
+  background-position: center;
+  background-size: 750rpx 430rpx;
+}
+.title3{
+  padding-top: 47rpx;
+  text-align: center;
+  height: 70rpx;
+}
+.content3{
+  padding-top:113rpx; 
+  overflow: hidden;
+}
+.content3_left{
+  padding-left: 93rpx;
+  float: left;
+  overflow: hidden;
+}
+.name3{
+float: left;
+font-size: 1rem;
+}
+.position3{
+float:left;
+font-size:0.8rem;
+margin-top:9rpx;
+margin-left:10rpx;
+width:166rpx;
+overflow:hidden;
+height:49rpx;
+margin-right:15px;
+
+
+}
+
+.content3_right{
+float:right;
+font-size:0.5rem;
+margin-top:19rpx;
+
+
+
+}
+.content3_right view{
+height:29rpx;
+line-height: 0;
+}
+/*第四套模板  */
+.bg_card4{
+   width: 750rpx;
+  height: 430rpx;
+  background-image: url(https://www.fmlcfs.top/BT/bg_img/template4bg.jpg);
+  background-position: center;
+  background-size: 750rpx 430rpx;
+}
+.box4{
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  padding-top: 100rpx;
+}
+.foot4{
+  color: #fff;
+  font-size: 0.6rem;
+  overflow: hidden;
+  padding-top:21rpx;
+
+}
+.content4_left{
+  float: left;
+  margin-left:166rpx;
+
+}
+.content4_right{
+  float: right;
+  margin-right:-1rpx;
+
+}
+.item4{
+height:71rpx;
+line-height:62rpx;
+
+width:260rpx;
+
+overflow:hidden;
+
+}
+swiper {
+display:block;
+height:429rpx;
+
+}
